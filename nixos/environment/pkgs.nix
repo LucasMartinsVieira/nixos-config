@@ -15,6 +15,11 @@
       unzip
       exfat
       lm_sensors
+      gnumake
+      pkg-config
+      bc
+      libnotify
+      cryptsetup
       git
 
       ani-cli
@@ -25,6 +30,7 @@
       vulkan-tools
       vulkan-validation-layers
       vulkan-loader
+      amdvlk
 
       #### Party tricks
       cmatrix
@@ -48,30 +54,42 @@
       ffmpegthumbnailer
       mpv
       thunderbird
-      cinnamon.warpinator
       virt-manager
+      feh
+      gimp
+      swww
+      sxiv
+      maim
 
-      #### Programming
-        ### Languages
-          # Rust
-          rustup
+      #### Programming 
+      rustup
+      go
+      nodejs_20
+      lua
 
-          go
+      # LSP's
 
-          # Dependencies
-          llvmPackages_rocm.lldb
-  
-          # Nix
-          nil
-  
-          # Markdown
-          marksman
-          slides
-          graph-easy
-          glow
-  
-          # Bash
-          nodePackages_latest.bash-language-server 
+      ## Rust
+
+      ## Lua
+      lua-language-server
+      stylua
+
+      ## Bash
+      nodePackages_latest.bash-language-server 
+      shellcheck
+
+      ## TypeScript
+      nodePackages_latest.typescript-language-server
+      prettierd
+      eslint_d
+
+      ## Others
+      nil
+      nodePackages_latest.vscode-json-languageserver
+      llvmPackages_rocm.lldb
+      marksman
+      jq
 
       # Editors
       helix 
@@ -80,14 +98,15 @@
       # Tools
       lazygit
       tokei
+      tealdeer
 
       #### Proprietary
       discord
       obsidian
+      spotify
 
       starship      
       redshift
-      feh
       bat
       p7zip
       freshfetch
@@ -99,8 +118,13 @@
       btop
       exa
       kitty
+      alacritty
+      zoxide
  
+      #### Wayland
       rofi-wayland
+      rofi-pass-wayland
+      rofi-emoji
       wlr-randr
       kanshi
       waybar
@@ -109,43 +133,22 @@
       grim
       slurp
       wl-clipboard
+      cliphist
       wlsunset
       wf-recorder
+      wtype
+      wlogout
 
+      #### Others
       dunst
-      gnome.adwaita-icon-theme
-      libnotify
-      cryptsetup
-      alacritty
-      alsa-lib
-      alsa-utils
-      asdf-vm
-      amdvlk
       brightnessctl
-      cliphist
-      gimp
+      gnome.adwaita-icon-theme
       gnome.pomodoro
       gnuchess
       libqalculate
-      lxde.lxsession
-      maim
-      nodejs_20
       pamixer
-      pass-wayland
-      rofi-pass-wayland
-      rofi-emoji
       playerctl
       poppler
-      spotify
-      swww
-      sxiv
-      wtype
-      wlogout
-      zoxide
-      gtklock
-      tealdeer
-      gnumake
-      pkg-config
     ];
   };
 }
