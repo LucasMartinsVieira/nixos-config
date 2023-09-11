@@ -1,9 +1,9 @@
 { pkgs, ... }: {
   services.xserver = {
     enable = true;
-    layout = "us";
+    layout = "us,br";
     xkbVariant = "intl";
-    xkbOptions = "lv3:ratl_switch,ctrl:nocaps";
+    xkbOptions = "grp:shifts_toggle,lv3:ratl_switch,ctrl:nocaps";
     excludePackages = with pkgs; [ xterm ];
     videoDrivers = [ "amdgpu" ];
     displayManager.startx.enable = true;
