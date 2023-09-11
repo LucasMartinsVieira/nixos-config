@@ -5,7 +5,7 @@ in {
 	services.syncthing = {
 		enable = true;
 		user = user;
-		dataDir = "/home/${user}/Documents/Obsidian";
-		configDir = "/home/${user}/Documents/Obsidian/.config/syncthing";
+		dataDir = "/home/${user}/Documents/obsidian";
+		configDir = "/home/${user}/Documents/obsidian/.config/syncthing";
 	};
 }

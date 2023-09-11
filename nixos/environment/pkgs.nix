@@ -116,7 +116,7 @@
       fd
       ripgrep
       btop
-      exa
+      eza
       kitty
       alacritty
       zoxide
