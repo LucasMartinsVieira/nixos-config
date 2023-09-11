@@ -85,8 +85,8 @@
       eslint_d
 
       ## Others
+      vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       nil
-      nodePackages_latest.vscode-json-languageserver
       llvmPackages_rocm.lldb
       marksman
       jq
