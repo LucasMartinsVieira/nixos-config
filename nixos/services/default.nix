@@ -8,6 +8,7 @@
     ./pipewire.nix
     ./udisks2.nix
     ./picom.nix
+    ./devmon.nix
     ./transmission.nix
     ./syncthing.nix
   ];

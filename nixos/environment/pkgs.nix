@@ -41,8 +41,6 @@
 
       #### Browser
       librewolf-wayland
-      ungoogled-chromium
-      brave
 
       #### Media
       yt-dlp
@@ -120,7 +118,7 @@
       kitty
       alacritty
       zoxide
- 
+
       #### Wayland
       rofi-wayland
       rofi-pass-wayland
@@ -149,6 +147,15 @@
       pamixer
       playerctl
       poppler
+
+      (retroarch.override {
+        cores = with libretro; [ 
+          nestopia
+          snes9x
+          pcsx2
+          dolphin
+        ];
+      })
     ];
   };
 }
