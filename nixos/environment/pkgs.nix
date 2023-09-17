@@ -64,6 +64,7 @@
       go
       nodejs_20
       lua
+      bun
 
       # LSP's
 
@@ -136,6 +137,7 @@
       wf-recorder
       wtype
       wlogout
+      eww-wayland
 
       #### Others
       dunst
