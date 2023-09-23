@@ -22,6 +22,19 @@
     "${config.xdg.configHome}/wlogout".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/wlogout";
     "${config.xdg.configHome}/zathura".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/zathura";
 
+    # Scripts
+    "${config.home.homeDirectory}/.local/bin/aw".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/aw";
+    "${config.home.homeDirectory}/.local/bin/bookmark".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/bookmark";
+    "${config.home.homeDirectory}/.local/bin/cht".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/cht";
+    "${config.home.homeDirectory}/.local/bin/colorscheme".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/colorscheme";
+    "${config.home.homeDirectory}/.local/bin/display_select".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/display_select";
+    "${config.home.homeDirectory}/.local/bin/files".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/files";
+    "${config.home.homeDirectory}/.local/bin/kitty-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/kitty-sessionizer";
+    "${config.home.homeDirectory}/.local/bin/search".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/search";
+    "${config.home.homeDirectory}/.local/bin/trash".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/trash";
+    "${config.home.homeDirectory}/.local/bin/usb".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/usb";
+    "${config.home.homeDirectory}/.local/bin/wallpaper".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/wallpaper";
+
     # Xorg
     "${config.home.homeDirectory}/.xinitrc".text = ''
         #!/bin/sh
