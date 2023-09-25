@@ -38,6 +38,7 @@
     "${config.home.homeDirectory}/.local/bin/usb".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/usb";
     "${config.home.homeDirectory}/.local/bin/volume".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/volume";
     "${config.home.homeDirectory}/.local/bin/wallpaper".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/wallpaper";
+    "${config.home.homeDirectory}/.local/bin/wifi".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/wifi";
 
     # Xorg
     "${config.home.homeDirectory}/.xinitrc".text = ''
