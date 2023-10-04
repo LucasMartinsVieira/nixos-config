@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   environment = {
-    defaultPackages =  [];
+    defaultPackages = [];
     systemPackages = with pkgs; [
       # TODO: Rewrite groups of packages like 'Core'
       #### Core
@@ -65,6 +65,7 @@
       nodejs_20
       lua
       bun
+      zig
 
       # LSP's
 
@@ -75,7 +76,7 @@
       stylua
 
       ## Bash
-      nodePackages_latest.bash-language-server 
+      nodePackages_latest.bash-language-server
       shellcheck
 
       ## TypeScript
@@ -91,7 +92,7 @@
       jq
 
       # Editors
-      helix 
+      helix
       neovim
 
       # Tools
@@ -104,7 +105,7 @@
       obsidian
       spotify
 
-      starship      
+      starship
       redshift
       bat
       p7zip
@@ -151,12 +152,7 @@
       poppler
 
       (retroarch.override {
-        cores = with libretro; [ 
-          nestopia
-          snes9x
-          pcsx2
-          dolphin
-        ];
+        cores = with libretro; [ nestopia snes9x pcsx2 dolphin ];
       })
     ];
   };
