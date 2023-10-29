@@ -5,7 +5,7 @@
     kernelModules = [ "amdgpu" ];
     loader = {
       systemd-boot.enable = true;
-      timeout = 0;
+      timeout = 5;
       efi.canTouchEfiVariables = true;
     };
   };

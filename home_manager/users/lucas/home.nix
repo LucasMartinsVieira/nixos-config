@@ -52,6 +52,15 @@
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
 
+  # Dconf
+  dconf.settings = {
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
+    };
+  };
+
+
   # Enable home-manager
   programs.home-manager.enable = true;
 

@@ -40,24 +40,26 @@
       figlet
 
       #### Browser
+      brave
       librewolf-wayland
 
       #### Media
-      yt-dlp
+      bitwarden
       cava
-      pavucontrol
-      zathura
-      lf
+      feh
       ffmpeg
       ffmpegthumbnailer
-      mpv
-      thunderbird
-      virt-manager
-      feh
       gimp
+      lf
+      maim
+      mpv
+      pavucontrol
       swww
       sxiv
-      maim
+      thunderbird
+      virt-manager
+      yt-dlp
+      zathura
 
       #### Programming 
       rustup
@@ -85,11 +87,11 @@
       eslint_d
 
       ## Others
-      vscode-langservers-extracted # HTML, CSS, JSON, ESLint
-      nil
-      llvmPackages_rocm.lldb
-      marksman
       jq
+      marksman
+      nil
+      rocmPackages.llvm.lldb
+      vscode-langservers-extracted # HTML, CSS, JSON, ESLint
 
       # Editors
       helix
@@ -105,44 +107,44 @@
       obsidian
       spotify
 
-      starship
-      redshift
+      alacritty
       bat
-      p7zip
-      freshfetch
-      neofetch
-      trash-cli
-      fzf
-      fd
-      ripgrep
       btop
       eza
+      fd
+      freshfetch
+      fzf
       kitty
-      alacritty
+      neofetch
+      p7zip
+      redshift
+      ripgrep
+      starship
+      trash-cli
       zoxide
 
       #### Wayland
-      rofi-wayland
-      rofi-pass-wayland
-      rofi-emoji
-      wlr-randr
-      kanshi
-      waybar
-      mpvpaper
-      imv
-      grim
-      slurp
-      wl-clipboard
       cliphist
-      wlsunset
-      wf-recorder
-      wtype
-      wlogout
       eww-wayland
+      grim
+      imv
+      kanshi
+      mpvpaper
+      rofi-emoji
+      rofi-pass-wayland
+      rofi-wayland
+      slurp
+      waybar
+      wf-recorder
+      wl-clipboard
+      wlogout
+      wlr-randr
+      wlsunset
+      wtype
 
       #### Others
-      dunst
       brightnessctl
+      dunst
       gnome.adwaita-icon-theme
       gnome.pomodoro
       gnuchess
@@ -151,8 +153,18 @@
       playerctl
       poppler
 
+      # Games
       (retroarch.override {
-        cores = with libretro; [ nestopia snes9x pcsx2 dolphin ];
+        cores = with libretro; [ 
+          # Nintendo
+          nestopia # NES
+          snes9x   # SNES
+          citra    # 3DS
+          dolphin  # Wii
+
+          # Playstation
+          pcsx2 
+        ];
       })
     ];
   };
