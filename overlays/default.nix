@@ -18,7 +18,7 @@
       };
     });
     awesome = inputs.nixpkgs-f2k.packages.${final.system}.awesome-luajit-git;
-    river = inputs.nixpkgs-f2k.packages.${final.system}.river-git;
+    # river = inputs.nixpkgs-f2k.packages.${final.system}.river-git;
   };
 
   # When applied, the unstable nixpkgs set (declared in the flake inputs) will

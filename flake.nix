@@ -14,7 +14,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     # Nixpkgs-f2k
-    nixpkgs-f2k.url = "github:fortuneteller2k/nixpkgs-f2k";
+    nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
 
     # TODO: Add any other flake you might need
     # hardware.url = "github:nixos/nixos-hardware";
