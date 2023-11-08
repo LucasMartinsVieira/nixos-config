@@ -4,6 +4,8 @@
       nerdfonts
       noto-fonts
       noto-fonts-emoji
+      corefonts
+      vistafonts
     ];
   };
 }

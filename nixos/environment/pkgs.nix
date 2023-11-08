@@ -56,6 +56,7 @@
       pavucontrol
       swww
       sxiv
+      telegram-desktop
       thunderbird
       virt-manager
       yt-dlp
