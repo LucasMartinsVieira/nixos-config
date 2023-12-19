@@ -94,5 +94,19 @@
         Categories=Audio;Music;Player;AudioVideo;
         StartupWMClass=spotify      
       '';
+
+    # Obsidian (GPU Disabled)
+    "${config.home.homeDirectory}/.local/share/applications/obsidian-disabled-gpu.desktop".text = '' 
+        [Desktop Entry]
+        [Desktop Entry]
+        Categories=Office
+        Comment=Knowledge base
+        Exec=obsidian --disable-gpu %u
+        Icon=obsidian
+        MimeType=x-scheme-handler/obsidian
+        Name=Obsidian (GPU Disabled)
+        Type=Application
+        Version=1.4
+      '';
      };
 }

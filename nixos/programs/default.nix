@@ -5,6 +5,7 @@
     ./fish.nix
     ./gnupg.nix
     ./hyprland.nix
+    ./nano.nix
     ./river.nix
     ./steam.nix
     ./tmux.nix
