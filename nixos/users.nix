@@ -4,7 +4,7 @@
     users = {
       lucas = {
         isNormalUser = true;
-        extraGroups = [ "wheel" "networkmanager" "libvirtd" "syncthing" ];
+        extraGroups = [ "wheel" "networkmanager" "libvirtd" "syncthing" "docker" ];
       };
     };
   };

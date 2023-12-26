@@ -16,7 +16,7 @@
     ./networking.nix
     ./boot.nix
     ./services
-    ./virtualisation.nix
+    ./virtualisation
     ./security.nix
     ./environment
     ./programs
