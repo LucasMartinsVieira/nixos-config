@@ -34,9 +34,10 @@
     "${config.home.homeDirectory}/.local/bin/screenshot".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/screenshot";
     "${config.home.homeDirectory}/.local/bin/files".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/files";
     "${config.home.homeDirectory}/.local/bin/kitty-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/kitty-sessionizer";
-    "${config.home.homeDirectory}/.local/bin/search".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/search";
     "${config.home.homeDirectory}/.local/bin/tmux-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tmux-sessionizer";
+    "${config.home.homeDirectory}/.local/bin/tmux-kill".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tmux-kill";
     "${config.home.homeDirectory}/.local/bin/trash".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/trash";
+    "${config.home.homeDirectory}/.local/bin/search".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/search";
     "${config.home.homeDirectory}/.local/bin/usb".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/usb";
     "${config.home.homeDirectory}/.local/bin/volume".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/volume";
     "${config.home.homeDirectory}/.local/bin/wallpaper".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/wallpaper";

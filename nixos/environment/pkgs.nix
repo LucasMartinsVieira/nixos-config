@@ -69,6 +69,9 @@
       lua
       bun
       zig
+      docker-compose
+      beekeeper-studio
+      insomnia
 
       # LSP's
 
@@ -93,6 +96,8 @@
       nil
       rocmPackages.llvm.lldb
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
+      yaml-language-server # YAML
+      shfmt
 
       # Editors
       helix
@@ -115,6 +120,7 @@
       fd
       freshfetch
       fzf
+      gum
       kitty
       neofetch
       p7zip
@@ -155,6 +161,7 @@
       poppler
 
       # Games
+      pcsx2
       (retroarch.override {
         cores = with libretro; [ 
           # Nintendo
