@@ -3,7 +3,7 @@
     enable = true;
     # plugins = with pkgs; [
     plugins = with pkgs.tmuxPlugins; [
-       vim-tmux-navigator
+       # vim-tmux-navigator
        resurrect
        continuum
     ];

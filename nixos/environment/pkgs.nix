@@ -80,6 +80,7 @@
       ## Lua
       lua-language-server
       stylua
+      luajitPackages.luacheck
 
       ## Bash
       nodePackages_latest.bash-language-server
@@ -90,10 +91,14 @@
       prettierd
       eslint_d
 
+      ## Nix
+      nil
+      statix
+      alejandra
+
       ## Others
       jq
       marksman
-      nil
       rocmPackages.llvm.lldb
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       yaml-language-server # YAML
