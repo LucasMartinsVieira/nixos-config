@@ -1,6 +1,6 @@
 { config, ... }: {
   home.file = {
-    # Shortcuts 
+    # Shortcuts
     "${config.home.homeDirectory}/media".source = config.lib.file.mkOutOfStoreSymlink "/run/media/${config.home.username}";
 
     # Dotfiles
@@ -45,69 +45,69 @@
 
     # Xorg
     "${config.home.homeDirectory}/.xinitrc".text = ''
-        #!/bin/sh
-        
-        userresources=$HOME/.Xresources
-        usermodmap=$HOME/.Xmodmap
-        sysresources=/etc/X11/xinit/.Xresources
-        sysmodmap=/etc/X11/xinit/.Xmodmap
-        
-        # merge in defaults and keymaps
-        if [ -f $sysresources ]; then
-          xrdb -merge $sysresources
-        fi
-        
-        if [ -f $sysmodmap ]; then
-            xmodmap $sysmodmap
-        fi
-        
-        if [ -f "$userresources" ]; then
-          xrdb -merge "$userresources"
-        fi
-        
-        if [ -f "$usermodmap" ]; then
-            xmodmap "$usermodmap"
-        fi
-        
-        # start some nice programs
-        
-        if [ -d /etc/X11/xinit/xinitrc.d ] ; then
-         for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
-          [ -x "$f" ] && . "$f"
-         done
-         unset f
-        fi
-        
-        exec awesome
-      '';
+      #!/bin/sh
+
+      userresources=$HOME/.Xresources
+      usermodmap=$HOME/.Xmodmap
+      sysresources=/etc/X11/xinit/.Xresources
+      sysmodmap=/etc/X11/xinit/.Xmodmap
+
+      # merge in defaults and keymaps
+      if [ -f $sysresources ]; then
+        xrdb -merge $sysresources
+      fi
+
+      if [ -f $sysmodmap ]; then
+          xmodmap $sysmodmap
+      fi
+
+      if [ -f "$userresources" ]; then
+        xrdb -merge "$userresources"
+      fi
+
+      if [ -f "$usermodmap" ]; then
+          xmodmap "$usermodmap"
+      fi
+
+      # start some nice programs
+
+      if [ -d /etc/X11/xinit/xinitrc.d ] ; then
+       for f in /etc/X11/xinit/xinitrc.d/?*.sh ; do
+        [ -x "$f" ] && . "$f"
+       done
+       unset f
+      fi
+
+      exec awesome
+    '';
 
     # Spotify-adblock
-    "${config.home.homeDirectory}/.local/share/applications/spotify-adblock.desktop".text = '' 
-        [Desktop Entry]
-        Type=Application
-        Name=Spotify (adblock)
-        GenericName=Music Player
-        Icon=spotify-client
-        TryExec=spotify
-        Exec=env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify %U
-        Terminal=false
-        MimeType=x-scheme-handler/spotify;
-        Categories=Audio;Music;Player;AudioVideo;
-        StartupWMClass=spotify      
-      '';
+    "${config.home.homeDirectory}/.local/share/applications/spotify-adblock.desktop".text = ''
+      [Desktop Entry]
+      Type=Application
+      Name=Spotify (adblock)
+      GenericName=Music Player
+      Icon=spotify-client
+      TryExec=spotify
+      Exec=env LD_PRELOAD=/usr/local/lib/spotify-adblock.so spotify %U
+      Terminal=false
+      MimeType=x-scheme-handler/spotify;
+      Categories=Audio;Music;Player;AudioVideo;
+      StartupWMClass=spotify
+    '';
 
     # Obsidian (GPU Disabled)
-    "${config.home.homeDirectory}/.local/share/applications/obsidian-disabled-gpu.desktop".text = '' 
-        [Desktop Entry]
-        [Desktop Entry]
-        Categories=Office
-        Comment=Knowledge base
-        Exec=obsidian --disable-gpu %u
-        Icon=obsidian
-        MimeType=x-scheme-handler/obsidian
-        Name=Obsidian (GPU Disabled)
-        Type=Application
-        Version=1.4
-      '';
-     };
+    "${config.home.homeDirectory}/.local/share/applications/obsidian-disabled-gpu.desktop".text = ''
+      [Desktop Entry]
+      [Desktop Entry]
+      Categories=Office
+      Comment=Knowledge base
+      Exec=obsidian --disable-gpu %u
+      Icon=obsidian
+      MimeType=x-scheme-handler/obsidian
+      Name=Obsidian (GPU Disabled)
+      Type=Application
+      Version=1.4
+    '';
+  };
 }

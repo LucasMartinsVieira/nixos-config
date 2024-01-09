@@ -1,6 +1,6 @@
 { pkgs, ... }: {
   environment = {
-    defaultPackages = [];
+    defaultPackages = [ ];
     systemPackages = with pkgs; [
       # TODO: Rewrite groups of packages like 'Core'
       #### Core
@@ -62,7 +62,7 @@
       yt-dlp
       zathura
 
-      #### Programming 
+      #### Programming
       rustup
       go
       nodejs_20
@@ -94,7 +94,7 @@
       ## Nix
       nil
       statix
-      alejandra
+      nixpkgs-fmt
 
       ## Others
       jq
@@ -168,15 +168,15 @@
       # Games
       pcsx2
       (retroarch.override {
-        cores = with libretro; [ 
+        cores = with libretro; [
           # Nintendo
           nestopia # NES
-          snes9x   # SNES
-          citra    # 3DS
-          dolphin  # Wii
+          snes9x # SNES
+          citra # 3DS
+          dolphin # Wii
 
           # Playstation
-          pcsx2 
+          pcsx2
         ];
       })
     ];

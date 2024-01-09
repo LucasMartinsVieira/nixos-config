@@ -1,7 +1,12 @@
 # This is your system's configuration file.
 # Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
-
-{ inputs, outputs, lib, config, pkgs, ... }: {
+{ inputs
+, outputs
+, lib
+, config
+, pkgs
+, ...
+}: {
   # You can import other NixOS modules here
   imports = [
     # If you want to use modules your own flake exports (from modules/nixos):
@@ -42,8 +47,8 @@
       # You can also add overlays exported from other flakes:
       # neovim-nightly-overlay.overlays.default
 
-      (final: prev: { 
-        ristate = prev.ristate.overrideAttrs(oldAttrs: rec {
+      (final: prev: {
+        ristate = prev.ristate.overrideAttrs (oldAttrs: rec {
           version = "master";
 
           src = prev.fetchFromGitLab {

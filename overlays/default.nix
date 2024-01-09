@@ -1,6 +1,5 @@
 # This file defines overlays
-{ inputs, ... }:
-{
+{ inputs, ... }: {
   # This one brings our custom packages from the 'pkgs' directory
   additions = final: _prev: import ../pkgs { pkgs = final; };
 
@@ -11,10 +10,10 @@
     # example = prev.example.overrideAttrs (oldAttrs: rec {
     # ...
     # });
-    discord = prev.discord.overrideAttrs( _: {
+    discord = prev.discord.overrideAttrs (_: {
       src = builtins.fetchTarball {
-      url = "https://discord.com/api/download?platform=linux&format=tar.gz";
-      sha256 = "09ianc37myki50g1404g0misd6qnk9pbiq8cx5cyvndwxz5gnlm7";
+        url = "https://discord.com/api/download?platform=linux&format=tar.gz";
+        sha256 = "09ianc37myki50g1404g0misd6qnk9pbiq8cx5cyvndwxz5gnlm7";
       };
     });
     awesome = inputs.nixpkgs-f2k.packages.${final.system}.awesome-luajit-git;

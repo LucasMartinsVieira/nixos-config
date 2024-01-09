@@ -8,10 +8,10 @@
     # WLR_RENDERER = "vulkan";
 
     NIXOS_OZONE_WL = "1";
-    
+
     QT_QPA_PLATFORM = "wayland;xcb";
 
-    KITTY_ENABLE_WAYLAND = "1"; 
+    KITTY_ENABLE_WAYLAND = "1";
 
     EDITOR = "nvim";
     VISUAL = "nvim";

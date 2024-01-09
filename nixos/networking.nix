@@ -8,7 +8,7 @@
         42000 # Warpinator
         42001 # Warpinator
 
-        8384  # Syncthing
+        8384 # Syncthing
         22000 # Syncthing
       ];
       allowedUDPPorts = [
