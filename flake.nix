@@ -9,6 +9,9 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-23.05";
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
 
+    # Nur (Nix user Repository)
+    nur.url = "github:nix-community/NUR";
+
     # Home manager
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -25,11 +28,7 @@
   };
 
   outputs =
-    { self
-    , nixpkgs
-    , home-manager
-    , ...
-    } @ inputs:
+    { self, nixpkgs, home-manager, nur, ... } @ inputs:
     let
       inherit (self) outputs;
       forAllSystems = nixpkgs.lib.genAttrs [
@@ -74,6 +73,7 @@
         nixos = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
           modules = [
+            nur.nixosModules.nur
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
             ./home_manager

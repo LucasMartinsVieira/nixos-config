@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   environment = {
     defaultPackages = [ ];
     systemPackages = with pkgs; [
@@ -68,10 +68,10 @@
       nodejs_20
       lua
       bun
+      nodePackages.pnpm
       zig
       docker-compose
       beekeeper-studio
-      insomnia
 
       # LSP's
 
@@ -103,21 +103,14 @@
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       yaml-language-server # YAML
       shfmt
-
-      # Editors
-      helix
-      neovim
-
-      # Tools
-      lazygit
-      tokei
-      tealdeer
+      tailwindcss-language-server
 
       #### Proprietary
       discord
       obsidian
       spotify
 
+      # Tools 
       alacritty
       bat
       btop
@@ -127,29 +120,29 @@
       fzf
       gum
       kitty
+      lazygit
       neofetch
+      neovim
       p7zip
       redshift
       ripgrep
       starship
+      tealdeer
+      tokei
       trash-cli
-      zoxide
 
-      #### Wayland
+      # Wayland (hyprland)
       cliphist
       eww-wayland
       grim
       imv
-      kanshi
       mpvpaper
-      rofi-emoji
-      rofi-pass-wayland
+      ristate
       rofi-wayland
       slurp
       waybar
       wf-recorder
       wl-clipboard
-      wlogout
       wlr-randr
       wlsunset
       wtype

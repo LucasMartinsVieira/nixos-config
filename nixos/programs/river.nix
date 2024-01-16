@@ -2,20 +2,20 @@
   programs.river = {
     enable = true;
     extraPackages = with pkgs; [
+      cliphist
+      eww-wayland
+      grim
+      imv
+      mpvpaper
       ristate
       rofi-wayland
-      wlr-randr
-      kanshi
-      eww-wayland
-      mpvpaper
-      swaybg
-      imv
-      mako
-      grim
       slurp
-      wl-clipboard
-      wlsunset
+      waybar
       wf-recorder
+      wl-clipboard
+      wlr-randr
+      wlsunset
+      wtype
     ];
   };
 }
