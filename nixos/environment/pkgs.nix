@@ -35,13 +35,11 @@
       #### Party tricks
       cmatrix
       cowsay
-      sl
       lolcat
       figlet
 
       #### Browser
-      brave
-      librewolf-wayland
+      ungoogled-chromium
 
       #### Media
       bitwarden
@@ -56,7 +54,6 @@
       pavucontrol
       swww
       sxiv
-      telegram-desktop
       thunderbird
       virt-manager
       yt-dlp
@@ -70,8 +67,6 @@
       bun
       nodePackages.pnpm
       zig
-      docker-compose
-      beekeeper-studio
 
       # LSP's
 
@@ -90,6 +85,7 @@
       nodePackages_latest.typescript-language-server
       prettierd
       eslint_d
+      biome
 
       ## Nix
       nil
@@ -112,13 +108,19 @@
 
       # Tools 
       alacritty
+      appimage-run
       bat
+      beekeeper-studio
+      bruno
       btop
+      docker-compose
       eza
       fd
       freshfetch
       fzf
+      gh
       gum
+      httpie
       kitty
       lazygit
       neofetch
@@ -127,6 +129,7 @@
       redshift
       ripgrep
       starship
+      steam-run
       tealdeer
       tokei
       trash-cli
