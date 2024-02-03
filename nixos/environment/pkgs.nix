@@ -49,6 +49,7 @@
       ffmpegthumbnailer
       gimp
       lf
+      yazi
       maim
       mpv
       pavucontrol
@@ -65,17 +66,17 @@
       nodejs_20
       lua
       bun
-      nodePackages.pnpm
+      nodePackages_latest.pnpm
       zig
 
       # LSP's
 
       ## Rust
+      rocmPackages.llvm.lldb
 
       ## Lua
       lua-language-server
       stylua
-      luajitPackages.luacheck
 
       ## Bash
       nodePackages_latest.bash-language-server
@@ -95,9 +96,9 @@
       ## Others
       jq
       marksman
-      rocmPackages.llvm.lldb
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       yaml-language-server # YAML
+      taplo # TOML
       shfmt
       tailwindcss-language-server
 
@@ -108,12 +109,12 @@
 
       # Tools 
       alacritty
-      appimage-run
       bat
       beekeeper-studio
       bruno
       btop
       docker-compose
+      distrobox
       eza
       fd
       freshfetch
@@ -129,7 +130,6 @@
       redshift
       ripgrep
       starship
-      steam-run
       tealdeer
       tokei
       trash-cli
@@ -155,26 +155,26 @@
       dunst
       gnome.adwaita-icon-theme
       gnome.pomodoro
-      gnuchess
       libqalculate
       pamixer
       playerctl
       poppler
 
       # Games
-      pcsx2
-      (retroarch.override {
-        cores = with libretro; [
-          # Nintendo
-          nestopia # NES
-          snes9x # SNES
-          citra # 3DS
-          dolphin # Wii
-
-          # Playstation
-          pcsx2
-        ];
-      })
+      gnuchess
+      # pcsx2
+      # (retroarch.override {
+      #   cores = with libretro; [
+      #     # Nintendo
+      #     nestopia # NES
+      #     snes9x # SNES
+      #     citra # 3DS
+      #     dolphin # Wii
+      #
+      #     # Playstation
+      #     pcsx2
+      #   ];
+      # })
     ];
   };
 }
