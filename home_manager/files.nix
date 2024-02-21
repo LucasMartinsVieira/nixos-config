@@ -38,6 +38,7 @@
     "${config.home.homeDirectory}/.local/bin/kitty-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/kitty-sessionizer";
     "${config.home.homeDirectory}/.local/bin/tmux-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tmux-sessionizer";
     "${config.home.homeDirectory}/.local/bin/tmux-kill".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tmux-kill";
+    "${config.home.homeDirectory}/.local/bin/tn".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tn";
     "${config.home.homeDirectory}/.local/bin/trash".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/trash";
     "${config.home.homeDirectory}/.local/bin/search".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/search";
     "${config.home.homeDirectory}/.local/bin/usb".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/usb";

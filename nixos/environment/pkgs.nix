@@ -106,6 +106,7 @@
       discord
       obsidian
       spotify
+      youtube-music
 
       # Tools 
       alacritty
@@ -133,6 +134,7 @@
       tealdeer
       tokei
       trash-cli
+      zoxide
 
       # Wayland (hyprland)
       cliphist
@@ -156,6 +158,7 @@
       gnome.adwaita-icon-theme
       gnome.pomodoro
       libqalculate
+      libreoffice
       pamixer
       playerctl
       poppler
