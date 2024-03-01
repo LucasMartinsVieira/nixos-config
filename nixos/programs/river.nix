@@ -3,7 +3,7 @@
     enable = true;
     extraPackages = with pkgs; [
       cliphist
-      eww-wayland
+      eww
       grim
       imv
       mpvpaper

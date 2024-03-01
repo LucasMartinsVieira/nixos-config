@@ -130,6 +130,7 @@
       p7zip
       redshift
       ripgrep
+      silicon
       starship
       tealdeer
       tokei
@@ -138,7 +139,7 @@
 
       # Wayland (hyprland)
       cliphist
-      eww-wayland
+      eww
       grim
       imv
       mpvpaper
