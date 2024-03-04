@@ -1,6 +1,7 @@
-{ inputs
-, outputs
-, ...
+{
+  inputs,
+  outputs,
+  ...
 }: {
   imports = [
     # Import home-manager's NixOS module
@@ -8,7 +9,7 @@
   ];
 
   home-manager = {
-    extraSpecialArgs = { inherit inputs outputs; };
+    extraSpecialArgs = {inherit inputs outputs;};
     users = {
       # Import your home-manager configuration
       lucas = import ./users/lucas/home.nix;

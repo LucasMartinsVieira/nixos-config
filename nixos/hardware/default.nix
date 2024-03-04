@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   # Specify each hardware separately
   imports = [
     ./opengl.nix

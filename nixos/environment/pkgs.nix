@@ -1,6 +1,10 @@
-{ pkgs, config, ... }: {
+{
+  pkgs,
+  config,
+  ...
+}: {
   environment = {
-    defaultPackages = [ ];
+    defaultPackages = [];
     systemPackages = with pkgs; [
       # TODO: Rewrite groups of packages like 'Core'
       #### Core
@@ -91,7 +95,7 @@
       ## Nix
       nil
       statix
-      nixpkgs-fmt
+      alejandra
 
       ## Others
       jq
@@ -108,7 +112,7 @@
       spotify
       youtube-music
 
-      # Tools 
+      # Tools
       alacritty
       bat
       beekeeper-studio

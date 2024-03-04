@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   programs.nano = {
     enable = false;
   };

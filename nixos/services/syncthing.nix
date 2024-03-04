@@ -1,8 +1,6 @@
-{ ... }:
-let
+{...}: let
   user = "lucas";
-in
-{
+in {
   services.syncthing = {
     enable = true;
     user = user;

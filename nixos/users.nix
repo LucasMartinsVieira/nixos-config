@@ -1,10 +1,10 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   users = {
     defaultUserShell = pkgs.fish;
     users = {
       lucas = {
         isNormalUser = true;
-        extraGroups = [ "wheel" "networkmanager" "libvirtd" "syncthing" "docker" ];
+        extraGroups = ["wheel" "networkmanager" "libvirtd" "syncthing" "docker"];
       };
     };
   };

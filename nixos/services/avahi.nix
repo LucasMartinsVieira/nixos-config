@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   # Enable networking to printer
   services.avahi = {
     enable = true;

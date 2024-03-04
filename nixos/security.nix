@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   security = {
     sudo.enable = false;
     rtkit.enable = true;
@@ -6,7 +6,7 @@
       enable = true;
       extraRules = [
         {
-          groups = [ "wheel" ];
+          groups = ["wheel"];
           keepEnv = true;
           persist = true;
         }

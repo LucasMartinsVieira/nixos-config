@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   hardware.pulseaudio = {
     enable = false;
   };

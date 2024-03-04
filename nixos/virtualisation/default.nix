@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   # Specify each service separately
   imports = [
     ./docker.nix

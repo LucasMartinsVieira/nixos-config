@@ -1,4 +1,4 @@
-{ ... }: {
+{...}: {
   # Specify each service separately
   imports = [
     ./auto-cpufreq.nix
