@@ -42,9 +42,6 @@
       lolcat
       figlet
 
-      #### Browser
-      ungoogled-chromium
-
       #### Media
       bitwarden
       cava
@@ -65,8 +62,6 @@
       zathura
 
       #### Programming
-      rustup
-      go
       nodejs_20
       lua
       bun
@@ -76,7 +71,17 @@
       # LSP's
 
       ## Rust
+      rustup
       rocmPackages.llvm.lldb
+
+      ## Go
+      delve
+      go
+      goimports-reviser
+      golines
+      gomodifytags
+      gopls
+      gotools
 
       ## Lua
       lua-language-server
@@ -110,7 +115,9 @@
       discord
       obsidian
       spotify
-      youtube-music
+      telegram-desktop
+      todoist-electron
+      tradingview
 
       # Tools
       alacritty
