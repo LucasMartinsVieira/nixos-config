@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   services.printing = {
-    enable = true;
+    enable = false;
     drivers = with pkgs; [epson-escpr];
     browsing = true;
     defaultShared = true;

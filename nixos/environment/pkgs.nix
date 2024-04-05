@@ -57,6 +57,7 @@
       swww
       sxiv
       thunderbird
+      transmission
       virt-manager
       yt-dlp
       zathura
@@ -71,6 +72,7 @@
       # LSP's
 
       ## Rust
+      bacon
       rustup
       rocmPackages.llvm.lldb
 
@@ -116,7 +118,7 @@
       obsidian
       spotify
       telegram-desktop
-      todoist-electron
+      ticktick
       tradingview
 
       # Tools
@@ -137,7 +139,7 @@
       kitty
       lazygit
       neofetch
-      neovim
+      # neovim
       p7zip
       redshift
       ripgrep

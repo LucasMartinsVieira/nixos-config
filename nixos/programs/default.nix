@@ -12,5 +12,6 @@
     ./steam.nix
     ./tmux.nix
     ./xwayland.nix
+    ./zsh.nix
   ];
 }
