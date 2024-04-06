@@ -7,6 +7,7 @@
     defaultPackages = [];
     systemPackages = with pkgs; [
       # TODO: Rewrite groups of packages like 'Core'
+
       #### Core
       lld
       gcc
@@ -28,7 +29,6 @@
 
       ani-cli
       mangal
-      mangohud
 
       #### Vulkan
       vulkan-tools
@@ -38,9 +38,7 @@
 
       #### Party tricks
       cmatrix
-      cowsay
       lolcat
-      figlet
 
       #### Media
       bitwarden
@@ -63,11 +61,6 @@
       zathura
 
       #### Programming
-      nodejs_20
-      lua
-      bun
-      nodePackages_latest.pnpm
-      zig
 
       # LSP's
 
@@ -77,15 +70,16 @@
       rocmPackages.llvm.lldb
 
       ## Go
-      delve
       go
-      goimports-reviser
-      golines
-      gomodifytags
-      gopls
-      gotools
+      # delve
+      # goimports-reviser
+      # golines
+      # gomodifytags
+      # gopls
+      # gotools
 
       ## Lua
+      lua
       lua-language-server
       stylua
 
@@ -94,10 +88,13 @@
       shellcheck
 
       ## TypeScript
+      biome
+      bun
+      eslint_d
+      nodejs_20
+      nodePackages_latest.pnpm
       nodePackages_latest.typescript-language-server
       prettierd
-      eslint_d
-      biome
 
       ## Nix
       nil
@@ -108,10 +105,8 @@
       jq
       marksman
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
-      yaml-language-server # YAML
-      taplo # TOML
       shfmt
-      tailwindcss-language-server
+      # tailwindcss-language-server
 
       #### Proprietary
       discord
@@ -128,17 +123,14 @@
       bruno
       btop
       docker-compose
-      distrobox
       eza
       fd
       freshfetch
       fzf
       gh
-      gum
       httpie
       kitty
       lazygit
-      neofetch
       # neovim
       p7zip
       redshift
@@ -170,15 +162,14 @@
       brightnessctl
       dunst
       gnome.adwaita-icon-theme
-      gnome.pomodoro
       libqalculate
       libreoffice
       pamixer
       playerctl
       poppler
+      qbittorrent
 
       # Games
-      gnuchess
       stable.pcsx2
       (stable.retroarch.override {
         cores = with stable.libretro; [

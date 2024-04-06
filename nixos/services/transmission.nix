@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   services.transmission = {
-    enable = true;
+    enable = false;
     package = pkgs.transmission-gtk;
   };
 }
