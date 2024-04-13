@@ -60,6 +60,10 @@
       yt-dlp
       zathura
 
+      ## Browsers
+      firefox
+      ungoogled-chromium
+
       #### Programming
 
       # LSP's
@@ -68,15 +72,6 @@
       bacon
       rustup
       rocmPackages.llvm.lldb
-
-      ## Go
-      go
-      # delve
-      # goimports-reviser
-      # golines
-      # gomodifytags
-      # gopls
-      # gotools
 
       ## Lua
       lua
@@ -101,6 +96,11 @@
       statix
       alejandra
 
+      ## Java
+      gradle
+      jdk
+      jetbrains.idea-community
+
       ## Others
       jq
       marksman
@@ -117,7 +117,7 @@
       tradingview
 
       # Tools
-      alacritty
+      # alacritty
       bat
       beekeeper-studio
       bruno
