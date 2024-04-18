@@ -73,6 +73,15 @@
       rustup
       rocmPackages.llvm.lldb
 
+      ## Java
+      python3
+      gradle
+      jdk
+      jdt-language-server
+      jetbrains.idea-community
+      kotlin
+      maven
+
       ## Lua
       lua
       lua-language-server
@@ -92,14 +101,10 @@
       prettierd
 
       ## Nix
+      alejandra
+      nh
       nil
       statix
-      alejandra
-
-      ## Java
-      gradle
-      jdk
-      jetbrains.idea-community
 
       ## Others
       jq

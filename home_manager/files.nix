@@ -6,6 +6,7 @@
     # Dotfiles
     "${config.xdg.configHome}/alacritty".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/alacritty";
     "${config.xdg.configHome}/awesome".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/awesome";
+    "${config.xdg.configHome}/bat".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/bat";
     "${config.xdg.configHome}/btop".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/btop";
     "${config.xdg.configHome}/dunst".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/dunst";
     "${config.xdg.configHome}/eww".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/cfg/eww";
