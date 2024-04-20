@@ -28,7 +28,7 @@
       git
 
       ani-cli
-      mangal
+      komikku
 
       #### Vulkan
       vulkan-tools
@@ -142,7 +142,7 @@
       ripgrep
       silicon
       starship
-      tealdeer
+      tlrc
       tokei
       trash-cli
       zoxide
