@@ -43,12 +43,12 @@
       #### Media
       bitwarden
       cava
+      cinnamon.warpinator
       feh
       ffmpeg
       ffmpegthumbnailer
       gimp
       lf
-      yazi
       maim
       mpv
       pavucontrol
@@ -57,6 +57,7 @@
       thunderbird
       transmission
       virt-manager
+      yazi
       yt-dlp
       zathura
 

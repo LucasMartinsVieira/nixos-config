@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   users = {
-    defaultUserShell = pkgs.zsh;
+    defaultUserShell = pkgs.fish;
     users = {
       lucas = {
         isNormalUser = true;

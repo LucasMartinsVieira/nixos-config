@@ -1,7 +1,7 @@
 {...}: {
   # Enable networking to printer
   services.avahi = {
-    enable = false;
+    enable = true;
     nssmdns4 = true;
     openFirewall = true;
   };
