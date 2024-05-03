@@ -176,6 +176,8 @@
       qbittorrent
 
       # Games
+      mangohud
+      protonup
       stable.pcsx2
       (stable.retroarch.override {
         cores = with stable.libretro; [

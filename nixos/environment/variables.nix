@@ -4,6 +4,8 @@
     FZF_CTRL_T_COMMAND = "fd --hidden --strip-cwd-prefix --exclude .git";
     FZF_ALT_C_COMMAND = "fd --type=d --hidden --strip-cwd-prefix --exclude .git";
 
+    STEAM_EXTRA_COMPAT_TOOLS_PATH = "~/.steam/root/compatibilitytools.d";
+
     LIBSEAT_BACKEND = "logind";
 
     WLR_NO_HARDWARE_CURSORS = "1";
