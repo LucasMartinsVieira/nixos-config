@@ -62,7 +62,7 @@
       zathura
 
       ## Browsers
-      firefox
+      librewolf
       ungoogled-chromium
 
       #### Programming
@@ -78,7 +78,7 @@
       python3
       gradle
       jdk
-      jdt-language-server
+      # jdt-language-server
       jetbrains.idea-community
       kotlin
       maven
@@ -112,6 +112,7 @@
       marksman
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       shfmt
+      yaml-language-server
       # tailwindcss-language-server
 
       #### Proprietary

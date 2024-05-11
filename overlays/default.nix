@@ -13,7 +13,7 @@
     discord = prev.discord.overrideAttrs (_: {
       src = builtins.fetchTarball {
         url = "https://discord.com/api/download?platform=linux&format=tar.gz";
-        sha256 = "151iklw4gb2y3drnp7k8rzrx3c329cpmzd9jhhdxvnwgj0w7j5pv";
+        sha256 = "13d3sqx3yj8vgzj6r4wxky7iwl3phx9rrvi77s5jxdi51i4v6gns";
       };
     });
     awesome = inputs.nixpkgs-f2k.packages.${final.system}.awesome-luajit-git;

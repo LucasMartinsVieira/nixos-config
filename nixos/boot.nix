@@ -3,7 +3,7 @@
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = ["amdgpu"];
     initrd = {
-      luks.devices."luks-ea8ebf17-05f5-4485-9ef5-d70ffa7c228e".device = "/dev/disk/by-uuid/ea8ebf17-05f5-4485-9ef5-d70ffa7c228e";
+      luks.devices."luks-8ff284ea-f99c-4e60-a7eb-608427b597f2".device = "/dev/disk/by-uuid/8ff284ea-f99c-4e60-a7eb-608427b597f2";
       kernelModules = ["amdgpu"];
     };
     loader = {
