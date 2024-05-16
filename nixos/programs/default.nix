@@ -6,6 +6,7 @@
     ./gnupg.nix
     ./hyprland.nix
     ./nano.nix
+    ./nh.nix
     ./nix-ld.nix
     ./river.nix
     ./steam.nix

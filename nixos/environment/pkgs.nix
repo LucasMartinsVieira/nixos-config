@@ -77,7 +77,9 @@
       ## Java
       python3
       gradle
+      maven
       jdk
+
       # jdt-language-server
       jetbrains.idea-community
       kotlin
@@ -102,8 +104,7 @@
       prettierd
 
       ## Nix
-      alejandra
-      nh
+      nixfmt-rfc-style
       nil
       statix
 
@@ -138,6 +139,7 @@
       httpie
       kitty
       lazygit
+      lazydocker
       # neovim
       p7zip
       redshift
