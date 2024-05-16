@@ -1,8 +1,5 @@
+{ pkgs, options, ... }:
 {
-  pkgs,
-  options,
-  ...
-}: {
   programs.nix-ld = {
     enable = true;
 

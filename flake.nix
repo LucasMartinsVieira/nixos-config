@@ -29,59 +29,66 @@
     # nix-colors.url = "github:misterio77/nix-colors";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    nur,
-    ...
-  } @ inputs: let
-    inherit (self) outputs;
-    forAllSystems = nixpkgs.lib.genAttrs [
-      "aarch64-darwin"
-      "aarch64-linux"
-      "i686-linux"
-      "x86_64-darwin"
-      "x86_64-linux"
-    ];
-  in {
-    # Your custom packages
-    # Acessible through 'nix build', 'nix shell', etc
-    packages = forAllSystems (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in
-        import ./pkgs {inherit pkgs;}
-    );
-    # Devshell for bootstrapping
-    # Acessible through 'nix develop' or 'nix-shell' (legacy)
-    devShells = forAllSystems (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-      in
-        import ./shell.nix {inherit pkgs;}
-    );
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      nur,
+      ...
+    }@inputs:
+    let
+      inherit (self) outputs;
+      forAllSystems = nixpkgs.lib.genAttrs [
+        "aarch64-darwin"
+        "aarch64-linux"
+        "i686-linux"
+        "x86_64-darwin"
+        "x86_64-linux"
+      ];
+    in
+    {
+      # Your custom packages
+      # Acessible through 'nix build', 'nix shell', etc
+      packages = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        import ./pkgs { inherit pkgs; }
+      );
+      # Devshell for bootstrapping
+      # Acessible through 'nix develop' or 'nix-shell' (legacy)
+      devShells = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        import ./shell.nix { inherit pkgs; }
+      );
 
-    # Your custom packages and modifications, exported as overlays
-    overlays = import ./overlays {inherit inputs;};
-    # Reusable nixos modules you might want to export
-    # These are usually stuff you would upstream into nixpkgs
-    nixosModules = import ./modules/nixos;
+      # Your custom packages and modifications, exported as overlays
+      overlays = import ./overlays { inherit inputs; };
+      # Reusable nixos modules you might want to export
+      # These are usually stuff you would upstream into nixpkgs
+      nixosModules = import ./modules/nixos;
 
-    homeManager = import ./home_manager;
+      homeManager = import ./home_manager;
 
-    # NixOS configuration entrypoint
-    # Available through 'nixos-rebuild --flake .#your-hostname'
-    nixosConfigurations = {
-      nixos = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs outputs;};
-        modules = [
-          nur.nixosModules.nur
-          # > Our main nixos configuration file <
-          ./nixos/configuration.nix
-          ./home_manager
-        ];
+      # NixOS configuration entrypoint
+      # Available through 'nixos-rebuild --flake .#your-hostname'
+      nixosConfigurations = {
+        nixos = nixpkgs.lib.nixosSystem {
+          specialArgs = {
+            inherit inputs outputs;
+          };
+          modules = [
+            nur.nixosModules.nur
+            # > Our main nixos configuration file <
+            ./nixos/configuration.nix
+            ./home_manager
+          ];
+        };
       };
     };
-  };
 }

@@ -1,10 +1,7 @@
+{ pkgs, config, ... }:
 {
-  pkgs,
-  config,
-  ...
-}: {
   environment = {
-    defaultPackages = [];
+    defaultPackages = [ ];
     systemPackages = with pkgs; [
       # TODO: Rewrite groups of packages like 'Core'
 

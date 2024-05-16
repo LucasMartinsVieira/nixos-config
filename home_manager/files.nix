@@ -1,4 +1,5 @@
-{config, ...}: {
+{ config, ... }:
+{
   home.file = {
     # Shortcuts
     "${config.home.homeDirectory}/media".source = config.lib.file.mkOutOfStoreSymlink "/run/media/${config.home.username}";

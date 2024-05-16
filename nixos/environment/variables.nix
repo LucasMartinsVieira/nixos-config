@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   environment.variables = {
     FZF_DEFAULT_COMMAND = "fd --hidden --strip-cwd-prefix --exclude .git";
     FZF_CTRL_T_COMMAND = "fd --hidden --strip-cwd-prefix --exclude .git";
