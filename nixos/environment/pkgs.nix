@@ -73,14 +73,12 @@
 
       ## Java
       python3
-      gradle
-      maven
-      jdk
-
+      # gradle
+      # maven
+      # jdk
       # jdt-language-server
       jetbrains.idea-community
-      kotlin
-      maven
+      # kotlin
 
       ## Lua
       lua
@@ -137,7 +135,7 @@
       kitty
       lazygit
       lazydocker
-      # neovim
+      neovim
       p7zip
       redshift
       ripgrep
