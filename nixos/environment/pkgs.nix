@@ -60,7 +60,6 @@
 
       ## Browsers
       librewolf
-      ungoogled-chromium
 
       #### Programming
 
@@ -73,12 +72,12 @@
 
       ## Java
       python3
-      # gradle
-      # maven
+      gradle
+      maven
       # jdk
       # jdt-language-server
       jetbrains.idea-community
-      # kotlin
+      kotlin
 
       ## Lua
       lua
@@ -149,6 +148,7 @@
       # Wayland (hyprland)
       cliphist
       eww
+      fuzzel
       grim
       imv
       mpvpaper
