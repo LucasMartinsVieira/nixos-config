@@ -39,6 +39,7 @@
 
       #### Media
       bitwarden
+      borgbackup
       cava
       cinnamon.warpinator
       feh
@@ -71,7 +72,6 @@
       rocmPackages.llvm.lldb
 
       ## Java
-      python3
       gradle
       maven
       # jdk
@@ -119,7 +119,6 @@
       tradingview
 
       # Tools
-      # alacritty
       bat
       beekeeper-studio
       bruno

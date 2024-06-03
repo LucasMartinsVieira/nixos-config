@@ -30,6 +30,7 @@
     # Scripts
     "${config.home.homeDirectory}/.local/bin/aw".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/aw";
     "${config.home.homeDirectory}/.local/bin/bookmark".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/bookmark";
+    "${config.home.homeDirectory}/.local/bin/borg-backup".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/borg-backup";
     "${config.home.homeDirectory}/.local/bin/brightness".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/brightness";
     "${config.home.homeDirectory}/.local/bin/cht".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/cht";
     "${config.home.homeDirectory}/.local/bin/colorscheme".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/colorscheme";

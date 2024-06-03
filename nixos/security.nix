@@ -1,6 +1,7 @@
 { ... }:
 {
   security = {
+    polkit.enable = true;
     sudo.enable = false;
     rtkit.enable = true;
     doas = {
