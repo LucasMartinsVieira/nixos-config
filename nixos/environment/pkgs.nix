@@ -145,6 +145,7 @@
       zoxide
 
       # Wayland (hyprland)
+      niri
       cliphist
       eww
       fuzzel
