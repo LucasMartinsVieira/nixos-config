@@ -115,7 +115,6 @@
       obsidian
       spotify
       telegram-desktop
-      ticktick
       tradingview
 
       # Tools
@@ -131,8 +130,8 @@
       gh
       httpie
       kitty
-      lazygit
       lazydocker
+      lazygit
       neovim
       p7zip
       redshift
@@ -171,7 +170,7 @@
       pamixer
       playerctl
       poppler
-      qbittorrent
+      trayer
 
       # Games
       mangohud

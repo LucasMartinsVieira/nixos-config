@@ -9,7 +9,7 @@
     };
     loader = {
       systemd-boot.enable = true;
-      timeout = 5;
+      timeout = 0;
       efi.canTouchEfiVariables = true;
     };
   };
