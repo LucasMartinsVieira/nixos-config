@@ -25,7 +25,7 @@
       git
 
       ani-cli
-      komikku
+      stable.komikku
 
       #### Vulkan
       vulkan-tools
@@ -53,7 +53,7 @@
       swww
       sxiv
       thunderbird
-      transmission
+      transmission_4-gtk
       virt-manager
       yazi
       yt-dlp
@@ -108,6 +108,7 @@
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       shfmt
       yaml-language-server
+      taplo
       # tailwindcss-language-server
 
       #### Proprietary
