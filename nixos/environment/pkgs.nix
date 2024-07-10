@@ -6,23 +6,24 @@
       # TODO: Rewrite groups of packages like 'Core'
 
       #### Core
-      lld
-      gcc
-      glibc
-      clang
-      llvmPackages.bintools
-      wget
-      killall
-      zip
-      unzip
-      exfat
-      lm_sensors
-      gnumake
-      pkg-config
       bc
-      libnotify
+      clang
       cryptsetup
+      exfat
+      gcc
       git
+      glibc
+      gnumake
+      killall
+      libnotify
+      lld
+      llvmPackages.bintools
+      lm_sensors
+      openssl
+      pkg-config
+      unzip
+      wget
+      zip
 
       ani-cli
       stable.komikku
@@ -38,9 +39,7 @@
       lolcat
 
       #### Media
-      bitwarden
       borgbackup
-      cava
       cinnamon.warpinator
       feh
       ffmpeg
@@ -69,7 +68,7 @@
       ## Rust
       bacon
       rustup
-      rocmPackages.llvm.lldb
+      # rocmPackages.llvm.lldb
 
       ## Java
       gradle
@@ -121,14 +120,12 @@
       # Tools
       bat
       beekeeper-studio
-      bruno
       btop
       docker-compose
       eza
       fd
       freshfetch
       fzf
-      gh
       httpie
       kitty
       lazydocker
@@ -165,7 +162,7 @@
       #### Others
       brightnessctl
       dunst
-      gnome.adwaita-icon-theme
+      adwaita-icon-theme
       libqalculate
       libreoffice
       pamixer

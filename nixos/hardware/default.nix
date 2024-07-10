@@ -2,8 +2,8 @@
 {
   # Specify each hardware separately
   imports = [
-    ./opengl.nix
     ./bluetooth.nix
+    ./graphics.nix
     ./pulseaudio.nix
   ];
 }
