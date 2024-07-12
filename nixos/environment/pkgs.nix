@@ -126,6 +126,7 @@
       fd
       freshfetch
       fzf
+      gum
       httpie
       kitty
       lazydocker
@@ -134,6 +135,7 @@
       p7zip
       redshift
       ripgrep
+      sesh
       silicon
       starship
       tlrc
