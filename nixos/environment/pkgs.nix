@@ -114,7 +114,6 @@
       discord
       obsidian
       spotify
-      telegram-desktop
       tradingview
 
       # Tools

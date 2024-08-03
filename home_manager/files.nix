@@ -32,6 +32,7 @@
     # Scripts
     "${config.home.homeDirectory}/.local/bin/aw".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/aw";
     "${config.home.homeDirectory}/.local/bin/bookmark".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/bookmark";
+    "${config.home.homeDirectory}/.local/bin/battery".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/battery";
     "${config.home.homeDirectory}/.local/bin/borg-backup".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/borg-backup";
     "${config.home.homeDirectory}/.local/bin/brightness".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/brightness";
     "${config.home.homeDirectory}/.local/bin/cht".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/cht";
@@ -41,6 +42,7 @@
     "${config.home.homeDirectory}/.local/bin/sb".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/sb";
     "${config.home.homeDirectory}/.local/bin/screenshot".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/screenshot";
     "${config.home.homeDirectory}/.local/bin/files".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/files";
+    "${config.home.homeDirectory}/.local/bin/get-icon".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/get-icon";
     "${config.home.homeDirectory}/.local/bin/kitty-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/kitty-sessionizer";
     "${config.home.homeDirectory}/.local/bin/tmux-sessionizer".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tmux-sessionizer";
     "${config.home.homeDirectory}/.local/bin/tmux-kill".source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/dotfiles/bin/tmux-kill";
