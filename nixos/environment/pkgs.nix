@@ -40,7 +40,7 @@
 
       #### Media
       borgbackup
-      cinnamon.warpinator
+      warpinator
       feh
       ffmpeg
       ffmpegthumbnailer
