@@ -40,11 +40,11 @@
 
       #### Media
       borgbackup
-      warpinator
       feh
       ffmpeg
       ffmpegthumbnailer
       gimp
+      imagemagick
       lf
       maim
       mpv
@@ -54,6 +54,7 @@
       thunderbird
       transmission_4-gtk
       virt-manager
+      warpinator
       yazi
       yt-dlp
       zathura
