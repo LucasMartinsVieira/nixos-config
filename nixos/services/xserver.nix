@@ -4,7 +4,7 @@
     enable = true;
     xkb = {
       layout = "us,br";
-      variant = "intl";
+      variant = "intl,";
       options = "grp:shifts_toggle,lv3:ratl_switch,ctrl:nocaps";
     };
     excludePackages = with pkgs; [ xterm ];
@@ -12,4 +12,7 @@
     displayManager.startx.enable = true;
     windowManager.awesome.enable = true;
   };
+
+  services.desktopManager.cosmic.enable = true;
+  services.displayManager.cosmic-greeter.enable = true;
 }

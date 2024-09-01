@@ -21,6 +21,12 @@
     # Nixpkgs-f2k
     nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
 
+    # Cosmic
+    nixos-cosmic = {
+      url = "github:lilyinstarlight/nixos-cosmic";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # TODO: Add any other flake you might need
     # hardware.url = "github:nixos/nixos-hardware";
 
@@ -35,6 +41,7 @@
       nixpkgs,
       home-manager,
       nur,
+      nixos-cosmic,
       ...
     }@inputs:
     let
@@ -83,6 +90,13 @@
             inherit inputs outputs;
           };
           modules = [
+            {
+              nix.settings = {
+                substituters = [ "https://cosmic.cachix.org/" ];
+                trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
+              };
+            }
+            nixos-cosmic.nixosModules.default
             nur.nixosModules.nur
             # > Our main nixos configuration file <
             ./nixos/configuration.nix

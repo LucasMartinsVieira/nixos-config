@@ -115,6 +115,7 @@
       discord
       obsidian
       spotify
+      telegram-desktop
       tradingview
 
       # Tools
@@ -170,7 +171,6 @@
       pamixer
       playerctl
       poppler
-      trayer
 
       # Games
       mangohud
