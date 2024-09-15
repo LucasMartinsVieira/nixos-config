@@ -136,7 +136,7 @@
       p7zip
       redshift
       ripgrep
-      sesh
+      stable.sesh
       silicon
       starship
       tlrc

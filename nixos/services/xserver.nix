@@ -13,6 +13,6 @@
     windowManager.awesome.enable = true;
   };
 
-  services.desktopManager.cosmic.enable = true;
-  services.displayManager.cosmic-greeter.enable = true;
+  services.desktopManager.cosmic.enable = false;
+  services.displayManager.cosmic-greeter.enable = false;
 }
