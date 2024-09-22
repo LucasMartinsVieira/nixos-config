@@ -14,7 +14,7 @@
     description = "Run borg-backup script";
     after = [ "network.target" ]; # Ensure network is available if your backup involves networked drives
     serviceConfig = {
-      ExecStart = "/home/lucas/.local/bin/borg-backup";
+      ExecStart = "${pkgs.bash}/bin/bash /home/lucas/.local/bin/borg-backup";
       # ExecStart = "${pkgs.bash}/bin/bash /home/lucas/.local/bin/borg-backup";
       User = "lucas";
       Group = "lucas";

@@ -1,4 +1,4 @@
-{ pkgs, config, ... }:
+{ inputs, pkgs, ... }:
 {
   environment = {
     defaultPackages = [ ];
@@ -61,6 +61,7 @@
 
       ## Browsers
       librewolf
+      inputs.zen-browser.packages."${system}".specific
 
       #### Programming
 
@@ -136,8 +137,8 @@
       p7zip
       redshift
       ripgrep
-      stable.sesh
       silicon
+      stable.sesh
       starship
       tlrc
       tokei

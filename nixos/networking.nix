@@ -4,7 +4,7 @@
     hostName = "nixos";
     networkmanager.enable = true;
 
-    firewall = {
+    firewall = rec {
       allowedTCPPorts = [
         22 # SSH
         80 # HTTP
