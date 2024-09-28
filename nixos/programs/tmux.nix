@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   programs.tmux = {
-    enable = true;
+    enable = false;
     # plugins = with pkgs; [
     plugins = with pkgs.tmuxPlugins; [
       # vim-tmux-navigator

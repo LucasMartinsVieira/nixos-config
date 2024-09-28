@@ -110,7 +110,7 @@
       shfmt
       yaml-language-server
       taplo
-      # tailwindcss-language-server
+      tailwindcss-language-server
 
       #### Proprietary
       discord
@@ -138,7 +138,7 @@
       redshift
       ripgrep
       silicon
-      stable.sesh
+      # stable.sesh
       starship
       tlrc
       tokei
@@ -172,6 +172,8 @@
       pamixer
       playerctl
       poppler
+      flowtime
+      mousam
 
       # Games
       mangohud
