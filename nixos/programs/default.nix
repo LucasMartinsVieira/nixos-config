@@ -3,6 +3,7 @@
   # Specify each program separately
   imports = [
     ./dconf.nix
+    ./direnv.nix
     ./fish.nix
     ./gnupg.nix
     ./hyprland.nix

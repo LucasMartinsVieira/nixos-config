@@ -138,7 +138,7 @@
       redshift
       ripgrep
       silicon
-      # stable.sesh
+      sesh
       starship
       tlrc
       tokei
