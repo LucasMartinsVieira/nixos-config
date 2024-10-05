@@ -105,7 +105,8 @@
 
       ## Others
       jq
-      marksman
+      markdown-oxide
+      # marksman
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
       shfmt
       yaml-language-server
