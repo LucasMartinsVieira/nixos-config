@@ -5,7 +5,7 @@
     systemPackages = with pkgs; [
       # TODO: Rewrite groups of packages like 'Core'
 
-      #### Core
+      ## Core
       bc
       clang
       cryptsetup
@@ -25,54 +25,57 @@
       wget
       zip
 
-      ani-cli
-      stable.komikku
-
-      #### Vulkan
+      ## Vulkan
+      amdvlk
+      vulkan-loader
       vulkan-tools
       vulkan-validation-layers
-      vulkan-loader
-      amdvlk
-
-      #### Party tricks
-      cmatrix
-      lolcat
-
-      #### Media
-      borgbackup
-      feh
-      ffmpeg
-      ffmpegthumbnailer
-      gimp
-      imagemagick
-      lf
-      maim
-      mpv
-      pavucontrol
-      swww
-      sxiv
-      thunderbird
-      transmission_4-gtk
-      virt-manager
-      warpinator
-      yazi
-      yt-dlp
-      zathura
 
       ## Browsers
       librewolf
       inputs.zen-browser.packages."${system}".specific
 
-      #### Programming
+      ## Proprietary 
+      discord
+      obsidian
+      spotify
+      telegram-desktop
+      tradingview
 
-      # LSP's
+      ## Code
 
-      ## Rust
+      ### Rust
       bacon
       rustup
       # rocmPackages.llvm.lldb
 
-      ## Java
+      ### Go 
+      go
+      goimports-reviser
+      golines
+      gopls
+
+      ### Lua
+      lua
+      lua-language-server
+      stylua
+
+      ### Nix
+      nixfmt-rfc-style
+      nil
+      statix
+
+      ### TypeScript
+      eslint_d
+      nodejs_20
+      nodePackages_latest.typescript-language-server
+      prettierd
+
+      ### Bash
+      nodePackages_latest.bash-language-server
+      shellcheck
+
+      ### Java
       gradle
       maven
       # jdk
@@ -80,30 +83,7 @@
       jetbrains.idea-community
       kotlin
 
-      ## Lua
-      lua
-      lua-language-server
-      stylua
-
-      ## Bash
-      nodePackages_latest.bash-language-server
-      shellcheck
-
-      ## TypeScript
-      biome
-      bun
-      eslint_d
-      nodejs_20
-      nodePackages_latest.pnpm
-      nodePackages_latest.typescript-language-server
-      prettierd
-
-      ## Nix
-      nixfmt-rfc-style
-      nil
-      statix
-
-      ## Others
+      ### Others
       jq
       markdown-oxide
       # marksman
@@ -113,68 +93,87 @@
       taplo
       tailwindcss-language-server
 
-      #### Proprietary
-      discord
-      obsidian
-      spotify
-      telegram-desktop
-      tradingview
-
-      # Tools
+      ## CLI Tools
+      ani-cli
       bat
-      beekeeper-studio
+      borgbackup
+      brightnessctl
       btop
+      cmatrix
       docker-compose
+      dunst
       eza
       fd
+      ffmpeg
+      ffmpegthumbnailer
       freshfetch
       fzf
       gum
       httpie
-      kitty
+      imagemagick
       lazydocker
       lazygit
+      lf
+      libqalculate
+      lolcat
+      mpv
       neovim
       p7zip
-      redshift
+      pamixer
+      playerctl
+      poppler
       ripgrep
-      silicon
       sesh
+      silicon
       starship
       tlrc
       tokei
       trash-cli
+      yazi
+      yt-dlp
       zoxide
 
-      # Wayland (hyprland)
-      niri
+      ## GUI Tools
+      beekeeper-studio
+      kitty
+
+      ## GUI Apps
+      flowtime
+      gimp
+      libreoffice
+      mousam
+      pavucontrol
+      stable.komikku
+      thunderbird
+      transmission_4-gtk
+      virt-manager
+      warpinator
+      zathura
+
+      ## X11
+      feh
+      maim
+      redshift
+      sxiv
+
+      ## Wayland
       cliphist
       eww
       fuzzel
       grim
       imv
       mpvpaper
+      niri
       ristate
       rofi-wayland
       slurp
+      swww
       waybar
       wf-recorder
       wl-clipboard
       wlr-randr
       wlsunset
       wtype
-
-      #### Others
-      brightnessctl
-      dunst
-      adwaita-icon-theme
-      libqalculate
-      libreoffice
-      pamixer
-      playerctl
-      poppler
-      flowtime
-      mousam
 
       # Games
       mangohud
