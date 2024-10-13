@@ -9,9 +9,6 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
 
-    # Nur (Nix user Repository)
-    nur.url = "github:nix-community/NUR";
-
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager/master";
@@ -24,6 +21,12 @@
     # Cosmic
     nixos-cosmic = {
       url = "github:lilyinstarlight/nixos-cosmic";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # Disko
+    disko = {
+      url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -43,7 +46,6 @@
       self,
       nixpkgs,
       home-manager,
-      nur,
       nixos-cosmic,
       ...
     }@inputs:
@@ -99,8 +101,10 @@
                 trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
               };
             }
+            (import ./disko.nix { device = "/dev/nvme0n1"; })
+            inputs.disko.nixosModules.disko
+
             nixos-cosmic.nixosModules.default
-            nur.nixosModules.nur
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
             ./home_manager
