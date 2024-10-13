@@ -24,12 +24,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Disko
-    disko = {
-      url = "github:nix-community/disko/latest";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Zen-browser
     zen-browser.url = "github:MarceColl/zen-browser-flake";
 
@@ -46,7 +40,6 @@
       self,
       nixpkgs,
       home-manager,
-      nixos-cosmic,
       ...
     }@inputs:
     let
@@ -101,10 +94,8 @@
                 trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
               };
             }
-            (import ./disko.nix { device = "/dev/nvme0n1"; })
-            inputs.disko.nixosModules.disko
 
-            nixos-cosmic.nixosModules.default
+            inputs.nixos-cosmic.nixosModules.default
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
             ./home_manager
