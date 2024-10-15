@@ -3,7 +3,7 @@
   programs.river = {
     enable = true;
     extraPackages = with pkgs; [
-      cliphist
+      # clipboard-jh
       eww
       grim
       imv

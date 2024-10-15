@@ -26,7 +26,7 @@
       zip
 
       ## Vulkan
-      amdvlk
+      stable.amdvlk
       vulkan-loader
       vulkan-tools
       vulkan-validation-layers
@@ -157,7 +157,7 @@
       sxiv
 
       ## Wayland
-      cliphist
+      # inputs.nixpkgs-cliphist-pin.nixpkgs.legacyPackages.${system}.cliphist
       eww
       fuzzel
       grim

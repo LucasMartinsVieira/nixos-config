@@ -9,9 +9,17 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     # Also see the 'unstable-packages' overlay at 'overlays/default.nix'.
 
+    nixpkgs-cliphist-pin.url = "github:nixos/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269";
+
     # Home manager
     home-manager = {
       url = "github:nix-community/home-manager/master";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # SOPS
+    sops-nix = {
+      url = "github:Mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -25,7 +33,7 @@
     };
 
     # Zen-browser
-    zen-browser.url = "github:MarceColl/zen-browser-flake";
+    zen-browser.url = "github:ch4og/zen-browser-flake";
 
     # TODO: Add any other flake you might need
     # hardware.url = "github:nixos/nixos-hardware";
@@ -78,7 +86,7 @@
       # These are usually stuff you would upstream into nixpkgs
       nixosModules = import ./modules/nixos;
 
-      homeManager = import ./home_manager;
+      homeManager = import ./home_manager { inherit inputs; };
 
       # NixOS configuration entrypoint
       # Available through 'nixos-rebuild --flake .#your-hostname'
@@ -94,8 +102,7 @@
                 trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
               };
             }
-
-            inputs.nixos-cosmic.nixosModules.default
+            # inputs.nixos-cosmic.nixosModules.default
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
             ./home_manager
