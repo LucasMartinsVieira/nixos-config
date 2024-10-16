@@ -6,7 +6,6 @@
     ./direnv.nix
     ./fish.nix
     ./gnupg.nix
-    ./hyprland.nix
     ./nano.nix
     ./nh.nix
     ./nix-ld.nix

@@ -5,14 +5,12 @@
     extraPackages = with pkgs; [
       cliphist-pin.cliphist
       eww
+      fuzzel
       grim
       imv
-      mpvpaper
       ristate
-      rofi-wayland
       slurp
-      waybar
-      wf-recorder
+      swww
       wl-clipboard
       wlr-randr
       wlsunset

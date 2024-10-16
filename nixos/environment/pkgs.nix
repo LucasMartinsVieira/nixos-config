@@ -74,76 +74,62 @@
       ### Bash
       nodePackages_latest.bash-language-server
       shellcheck
+      shfmt
 
       ### Java
-      gradle
-      maven
+      # gradle
+      # maven
       # jdk
       # jdt-language-server
-      jetbrains.idea-community
-      kotlin
+      # jetbrains.idea-community
+      # kotlin
 
       ### Others
       jq
       markdown-oxide
-      # marksman
       vscode-langservers-extracted # HTML, CSS, JSON, ESLint
-      shfmt
       yaml-language-server
       taplo
       tailwindcss-language-server
 
-      ## CLI Tools
+      ## Tools
       ani-cli
       bat
+      beekeeper-studio
       borgbackup
       brightnessctl
       btop
-      cmatrix
-      docker-compose
       dunst
       eza
       fd
       ffmpeg
       ffmpegthumbnailer
-      freshfetch
       fzf
-      gum
       httpie
       imagemagick
+      kitty
       lazydocker
       lazygit
       lf
-      libqalculate
-      lolcat
       mpv
       neovim
       p7zip
-      pamixer
       playerctl
       poppler
       ripgrep
       sesh
-      silicon
       starship
       tlrc
       tokei
-      trash-cli
       yazi
       yt-dlp
       zoxide
-
-      ## GUI Tools
-      beekeeper-studio
-      kitty
 
       ## GUI Apps
       flowtime
       gimp
       libreoffice
-      mousam
       pavucontrol
-      stable.komikku
       thunderbird
       transmission_4-gtk
       virt-manager
@@ -155,24 +141,6 @@
       maim
       redshift
       sxiv
-
-      ## Wayland
-      eww
-      fuzzel
-      grim
-      imv
-      mpvpaper
-      niri
-      ristate
-      rofi-wayland
-      slurp
-      swww
-      waybar
-      wf-recorder
-      wl-clipboard
-      wlr-randr
-      wlsunset
-      wtype
 
       # Games
       mangohud
