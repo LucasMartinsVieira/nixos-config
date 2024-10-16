@@ -25,14 +25,14 @@
   # be accessible through 'pkgs.unstable'
   stable-packages = final: _prev: {
     stable = import inputs.nixpkgs-stable {
-      system = final.system;
+      inherit (final) system;
       config.allowUnfree = true;
     };
   };
 
   cliphist-pin = final: prev: {
     cliphist-pin = import inputs.nixpkgs-cliphist-pin {
-      system = final.system;
+      inherit (final) system;
       config.allowUnfree = true;
     };
   };
