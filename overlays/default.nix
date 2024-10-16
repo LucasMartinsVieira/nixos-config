@@ -29,4 +29,11 @@
       config.allowUnfree = true;
     };
   };
+
+  cliphist-pin = final: prev: {
+    cliphist-pin = import inputs.nixpkgs-cliphist-pin {
+      system = final.system;
+      config.allowUnfree = true;
+    };
+  };
 }

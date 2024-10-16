@@ -157,7 +157,6 @@
       sxiv
 
       ## Wayland
-      # inputs.nixpkgs-cliphist-pin.nixpkgs.legacyPackages.${system}.cliphist
       eww
       fuzzel
       grim
