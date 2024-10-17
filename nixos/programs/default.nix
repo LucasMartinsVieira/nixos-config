@@ -7,7 +7,6 @@
     ./fish.nix
     ./gnupg.nix
     ./nano.nix
-    ./nh.nix
     ./nix-ld.nix
     ./river.nix
     ./steam.nix
