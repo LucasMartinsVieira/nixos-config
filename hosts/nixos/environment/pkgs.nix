@@ -124,6 +124,7 @@
         playerctl
         poppler
         ripgrep
+        rofi-wayland
         sesh
         starship
         tlrc
