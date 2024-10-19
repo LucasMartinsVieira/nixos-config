@@ -1,5 +1,5 @@
 # This file defines overlays
-{ inputs, ... }:
+{ inputs, lib, ... }:
 {
   # This one brings our custom packages from the 'pkgs' directory
   additions = final: _prev: import ../pkgs { pkgs = final; };
@@ -17,6 +17,25 @@
         sha256 = "0njwcnrn2br47dzqvmlazcmf63bblx68775f0kv8djwxfvg977im";
       };
     });
+
+    ristate = prev.ristate.overrideAttrs (oldAttrs: rec {
+      version = "master";
+
+      src = prev.fetchFromGitLab {
+        owner = "snakedye";
+        repo = "ristate";
+        rev = "92e989f26cadac69af1208163733e73b4cf447da";
+        hash = "sha256-6slH7R6kbSXQBd7q38oBEbngaCbFv0Tyq34VB1PAfhM";
+      };
+
+      cargoDeps = oldAttrs.cargoDeps.overrideAttrs (
+        lib.const {
+          inherit src;
+          outputHash = "sha256-fOo9C0dNL9dYy5wXq/yEDqOV0OhOTEY42XK8ShpQh6k=";
+        }
+      );
+    });
+
     awesome = inputs.nixpkgs-f2k.packages.${final.system}.awesome-luajit-git;
     # river = inputs.nixpkgs-f2k.packages.${final.system}.river-git;
   };

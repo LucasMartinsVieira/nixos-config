@@ -62,6 +62,8 @@
         "x86_64-darwin"
         "x86_64-linux"
       ];
+
+      inherit (nixpkgs) lib;
     in
     {
       # Your custom packages
@@ -84,7 +86,7 @@
       );
 
       # Your custom packages and modifications, exported as overlays
-      overlays = import ./overlays { inherit inputs; };
+      overlays = import ./overlays { inherit inputs lib; };
       # Reusable nixos modules you might want to export
       # These are usually stuff you would upstream into nixpkgs
       nixosModules = import ./modules/nixos;
