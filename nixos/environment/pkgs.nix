@@ -112,7 +112,6 @@
         ffmpeg
         ffmpegthumbnailer
         fzf
-        gum
         httpie
         imagemagick
         kitty

@@ -7,6 +7,7 @@
       # vim-tmux-navigator
       resurrect
       continuum
+      extrakto
     ];
   };
 }

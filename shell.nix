@@ -11,6 +11,7 @@
       nix
       home-manager
       git
+      sops
     ];
   };
 }
