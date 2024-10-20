@@ -12,6 +12,7 @@
   home = {
     username = "lucas";
     homeDirectory = "/home/lucas";
+    preferXdgDirectories = true; # whether to make programs use XDG directories whenever supported
   };
 
   # Dconf
