@@ -13,6 +13,8 @@
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
     ../../common/core
+
+    ../../common/optionals/development
   ];
 
   nixpkgs = {

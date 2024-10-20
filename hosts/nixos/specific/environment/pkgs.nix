@@ -49,56 +49,6 @@
         telegram-desktop
         tradingview
 
-        ## Code
-
-        ### Rust
-        bacon
-        rustup
-        # rocmPackages.llvm.lldb
-
-        ### Go 
-        go
-        goimports-reviser
-        golines
-        gopls
-
-        ### Lua
-        lua
-        lua-language-server
-        stylua
-
-        ### Nix
-        nixfmt-rfc-style
-        nil
-        statix
-
-        ### TypeScript
-        eslint_d
-        nodejs_20
-        nodePackages_latest.typescript-language-server
-        prettierd
-
-        ### Bash
-        nodePackages_latest.bash-language-server
-        shellcheck
-        shfmt
-
-        ### Java
-        # gradle
-        # maven
-        # jdk
-        # jdt-language-server
-        # jetbrains.idea-community
-        # kotlin
-
-        ### Others
-        jq
-        markdown-oxide
-        vscode-langservers-extracted # HTML, CSS, JSON, ESLint
-        yaml-language-server
-        taplo
-        tailwindcss-language-server
-
         ## Tools
         ani-cli
         # bat
