@@ -20,10 +20,10 @@
 
     # You can also split up your configuration and import pieces of it here:
 
-    ########## Required Configs ############
+    # Required Configs
     ../common/core
 
-    ########## Optinals #############
+    # Optinals
     ../common/optionals/services/auto-cpufreq.nix
     ../common/optionals/services/devmon.nix
     ../common/optionals/services/picom.nix

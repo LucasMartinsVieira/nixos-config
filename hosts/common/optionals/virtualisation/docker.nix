@@ -3,7 +3,7 @@ _: {
     enable = true;
   };
 
-  networking = {
+  networking.firewall = {
     enable = true;
     trustedInterfaces = [ "docker0" ];
   };
