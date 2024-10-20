@@ -53,9 +53,9 @@
     ../common/optionals/programs/xwayland.nix
     ../common/optionals/programs/zsh.nix
 
-    ./modules/boot.nix
-    ./modules/networking.nix
-    ./modules/environment
+    ./specific/boot.nix
+    ./specific/networking.nix
+    ./specific/environment
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
