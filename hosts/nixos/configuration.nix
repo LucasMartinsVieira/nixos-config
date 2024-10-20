@@ -22,9 +22,18 @@
 
     ../common/core
 
+    ../common/optionals/services/auto-cpufreq.nix
+    ../common/optionals/services/devmon.nix
+    ../common/optionals/services/picom.nix
+    ../common/optionals/services/openssh.nix
+    ../common/optionals/services/picom.nix
+    ../common/optionals/services/pipewire.nix
+    ../common/optionals/services/syncthing.nix
+    ../common/optionals/services/udisks2.nix
+    ../common/optionals/services/xserver.nix
+
     ./networking.nix
     ./boot.nix
-    ./services
     ./virtualisation
     ./environment
     ./programs

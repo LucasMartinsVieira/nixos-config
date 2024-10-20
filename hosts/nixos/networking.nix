@@ -1,10 +1,9 @@
-_:
-{
+_: {
   networking = {
     hostName = "nixos";
     networkmanager.enable = true;
 
-    firewall = rec {
+    firewall = {
       allowedTCPPorts = [
         22 # SSH
         80 # HTTP
