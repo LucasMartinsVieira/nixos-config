@@ -1,8 +1,9 @@
 default:
   @just --list
 
-rebuild: rebuild-pre
-  doas nixos-rebuild switch --flake .#
+rebuild HOST:
+  just rebuild-pre
+  doas nixos-rebuild switch --flake ".#{{HOST}}"
 
 rebuild-pre:
   git add *
@@ -10,7 +11,9 @@ rebuild-pre:
 update:
   nix flake update
 
-rebuild-update: update && rebuild
+rebuild-update HOST: 
+  just update 
+  just rebuild
 
 lint:
   statix check .
