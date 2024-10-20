@@ -23,7 +23,7 @@
     ########## Required Configs ############
     ../common/core
 
-    ########## Optinals
+    ########## Optinals #############
     ../common/optionals/services/auto-cpufreq.nix
     ../common/optionals/services/devmon.nix
     ../common/optionals/services/picom.nix
@@ -38,9 +38,11 @@
     ../common/optionals/hardware/bluetooth.nix
     ../common/optionals/hardware/graphics.nix
 
-    ./networking.nix
-    ./boot.nix
-    ./virtualisation
+    ../common/optionals/virtualisation/docker.nix
+    ../common/optionals/virtualisation/libvirtd.nix
+
+    ./modules/boot.nix
+    ./modules/networking.nix
     ./environment
     ./programs
 
