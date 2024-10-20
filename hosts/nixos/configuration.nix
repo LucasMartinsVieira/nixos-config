@@ -44,18 +44,17 @@
     ../common/optionals/programs/dconf.nix
     ../common/optionals/programs/direnv.nix
     ../common/optionals/programs/fish.nix
+    ../common/optionals/programs/games.nix
     ../common/optionals/programs/gnupg.nix
     ../common/optionals/programs/nano.nix
     ../common/optionals/programs/nix-ld.nix
     ../common/optionals/programs/river.nix
-    ../common/optionals/programs/steam.nix
     ../common/optionals/programs/tmux.nix
     ../common/optionals/programs/xwayland.nix
     ../common/optionals/programs/zsh.nix
 
     ./specific/boot.nix
     ./specific/networking.nix
-    ./specific/environment
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix

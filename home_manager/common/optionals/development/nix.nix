@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    lua
-    lua-language-server
-    stylua
+    nil
+    nixfmt-rfc-style
+    statix
   ];
 }

@@ -1,9 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    go
-    goimports-reviser
-    golines
-    gopls
+    nodePackages_latest.bash-language-server
+    shellcheck
+    shfmt
   ];
 }

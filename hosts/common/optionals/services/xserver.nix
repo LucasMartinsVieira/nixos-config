@@ -13,6 +13,13 @@
     windowManager.awesome.enable = true;
   };
 
+  environment.systemPackages = with pkgs; [
+    feh
+    maim
+    redshift
+    sxiv
+  ];
+
   # services.desktopManager.cosmic.enable = false;
   # services.displayManager.cosmic-greeter.enable = false;
 }
