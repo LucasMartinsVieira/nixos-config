@@ -101,7 +101,7 @@
 
         ## Tools
         ani-cli
-        bat
+        # bat
         beekeeper-studio
         borgbackup
         brightnessctl

@@ -12,7 +12,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    ../../common
+    ../../common/core
   ];
 
   nixpkgs = {
@@ -61,6 +61,8 @@
 
   # Enable home-manager
   programs.home-manager.enable = true;
+
+  programs.bat.enable = true;
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

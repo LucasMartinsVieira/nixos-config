@@ -2,7 +2,6 @@
 {
   imports = [
     ./console.nix
-    ./fonts.nix
     ./i18n.nix
     ./security.nix
     ./time.nix
