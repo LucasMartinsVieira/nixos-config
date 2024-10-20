@@ -41,10 +41,21 @@
     ../common/optionals/virtualisation/docker.nix
     ../common/optionals/virtualisation/libvirtd.nix
 
+    ../common/optionals/programs/dconf.nix
+    ../common/optionals/programs/direnv.nix
+    ../common/optionals/programs/fish.nix
+    ../common/optionals/programs/gnupg.nix
+    ../common/optionals/programs/nano.nix
+    ../common/optionals/programs/nix-ld.nix
+    ../common/optionals/programs/river.nix
+    ../common/optionals/programs/steam.nix
+    ../common/optionals/programs/tmux.nix
+    ../common/optionals/programs/xwayland.nix
+    ../common/optionals/programs/zsh.nix
+
     ./modules/boot.nix
     ./modules/networking.nix
     ./environment
-    ./programs
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
