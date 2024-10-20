@@ -20,8 +20,10 @@
 
     # You can also split up your configuration and import pieces of it here:
 
+    ########## Required Configs ############
     ../common/core
 
+    ########## Optinals
     ../common/optionals/services/auto-cpufreq.nix
     ../common/optionals/services/devmon.nix
     ../common/optionals/services/picom.nix
@@ -32,12 +34,15 @@
     ../common/optionals/services/udisks2.nix
     ../common/optionals/services/xserver.nix
 
+    ../common/optionals/hardware/graphics.nix
+    ../common/optionals/hardware/bluetooth.nix
+    ../common/optionals/hardware/graphics.nix
+
     ./networking.nix
     ./boot.nix
     ./virtualisation
     ./environment
     ./programs
-    ./hardware
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
