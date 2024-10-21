@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./bat.nix
     ./files.nix
     ./fonts.nix
     ./gtk.nix

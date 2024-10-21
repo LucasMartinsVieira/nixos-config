@@ -6,7 +6,6 @@
 
   home.packages = with pkgs; [
     ani-cli
-    bat
     borgbackup
     brightnessctl
     btop
@@ -22,7 +21,6 @@
     lazygit
     lf
     mpv
-    # neovim
     p7zip
     playerctl
     poppler
