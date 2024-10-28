@@ -9,6 +9,7 @@
     borgbackup
     brightnessctl
     btop
+    docker-compose
     dunst
     eza
     fd

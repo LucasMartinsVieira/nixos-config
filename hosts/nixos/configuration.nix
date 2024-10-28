@@ -26,8 +26,8 @@
     # Optinals
     ../common/optionals/services/auto-cpufreq.nix
     ../common/optionals/services/devmon.nix
-    ../common/optionals/services/picom.nix
     ../common/optionals/services/openssh.nix
+    ../common/optionals/services/picom.nix
     ../common/optionals/services/picom.nix
     ../common/optionals/services/pipewire.nix
     ../common/optionals/services/syncthing.nix
