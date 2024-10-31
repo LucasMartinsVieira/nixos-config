@@ -11,6 +11,8 @@
           "libvirtd"
           "syncthing"
           "docker"
+          "input"
+          "uinput" # Kanata
         ];
       };
     };

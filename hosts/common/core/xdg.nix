@@ -1,5 +1,4 @@
-_:
-{
+_: {
   xdg = {
     portal = {
       enable = true;

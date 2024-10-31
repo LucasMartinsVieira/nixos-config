@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     flowtime
+    foliate
     gimp
     libreoffice
     pavucontrol
