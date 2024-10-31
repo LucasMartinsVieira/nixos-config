@@ -8,6 +8,7 @@
       fuzzel
       grim
       imv
+      kanshi
       ristate
       slurp
       swww
