@@ -1,9 +1,11 @@
+HOSTNAME := `hostname`
+
 default:
   @just --list
 
-rebuild HOST:
+rebuild:
   just rebuild-pre
-  doas nixos-rebuild switch --flake ".#{{HOST}}"
+  doas nixos-rebuild switch --flake ".#{{HOSTNAME}}"
 
 rebuild-pre:
   git add *
@@ -11,7 +13,7 @@ rebuild-pre:
 update:
   nix flake update
 
-rebuild-update HOST: 
+rebuild-update: 
   just update 
   just rebuild
 
