@@ -17,9 +17,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Nix User Repository
-    nur.url = "github:nix-community/NUR";
-
     # SOPS
     sops-nix = {
       url = "github:Mic92/sops-nix";
@@ -109,7 +106,6 @@
                 trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
               };
             }
-            inputs.nur.nixosModules.nur
             # inputs.nixos-cosmic.nixosModules.default
             # > Our main nixos configuration file <
             ./hosts/nixos/configuration.nix
