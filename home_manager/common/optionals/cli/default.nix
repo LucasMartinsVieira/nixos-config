@@ -33,6 +33,7 @@
     tokei
     yazi
     yt-dlp
+    zapnote
     zoxide
   ];
 }

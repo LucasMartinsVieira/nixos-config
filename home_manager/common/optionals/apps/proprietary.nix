@@ -3,7 +3,7 @@
   home.packages = with pkgs; [
     discord
     obsidian
-    # spotify
+    spotify-adblock
     telegram-desktop
     tradingview
   ];

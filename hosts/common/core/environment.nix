@@ -7,42 +7,40 @@
 {
   environment = {
     defaultPackages = [ ];
-    systemPackages =
-      with pkgs;
-      [
-        # TODO: Rewrite groups of packages like 'Core'
+    systemPackages = with pkgs; [
+      # TODO: Rewrite groups of packages like 'Core'
 
-        ## Core
-        bc
-        clang
-        cryptsetup
-        exfat
-        gcc
-        git
-        glibc
-        gnumake
-        killall
-        libnotify
-        lld
-        llvmPackages.bintools
-        lm_sensors
-        openssl
-        pkg-config
-        unzip
-        wget
-        zip
+      ## Core
+      bc
+      clang
+      cryptsetup
+      exfat
+      gcc
+      git
+      glibc
+      gnumake
+      killall
+      libnotify
+      lld
+      llvmPackages.bintools
+      lm_sensors
+      openssl
+      pkg-config
+      unzip
+      wget
+      zip
 
-        ## Vulkan
-        stable.amdvlk
-        vulkan-loader
-        vulkan-tools
-        vulkan-validation-layers
+      ## Vulkan
+      stable.amdvlk
+      vulkan-loader
+      vulkan-tools
+      vulkan-validation-layers
 
-        ## Browsers
-        librewolf
-        inputs.zen-browser.packages."${system}".specific
-      ]
-      ++ [ config.nur.repos.nltch.spotify-adblock ];
+      ## Browsers
+      librewolf
+      inputs.zen-browser.packages."${system}".specific
+    ];
+    # ++ [ config.nur.repos.nltch.spotify-adblock ];
     variables = {
       FZF_DEFAULT_COMMAND = "fd --hidden --strip-cwd-prefix --exclude .git";
       FZF_CTRL_T_COMMAND = "fd --hidden --strip-cwd-prefix --exclude .git";

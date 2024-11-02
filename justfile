@@ -8,7 +8,7 @@ rebuild:
   doas nixos-rebuild switch --flake ".#{{HOSTNAME}}"
 
 rebuild-pre:
-  git add *
+  git add *.nix
 
 update:
   nix flake update

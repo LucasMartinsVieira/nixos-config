@@ -5,4 +5,6 @@
 }:
 {
   # example = pkgs.callPackage ./example { };
+  zapnote = pkgs.callPackage ./zapnote { };
+  spotify-adblock = pkgs.callPackage ./spotify-adblock { };
 }
