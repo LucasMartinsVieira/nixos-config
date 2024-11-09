@@ -5,6 +5,7 @@
     foliate
     gimp
     libreoffice
+    localsend
     pavucontrol
     thunderbird
     transmission_4-gtk

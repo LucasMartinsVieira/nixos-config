@@ -83,10 +83,12 @@
 
         42000 # Warpinator
         42001 # Warpinator
+        53317 # Localsend
       ];
       allowedUDPPorts = [
         42000 # Warpinator
         42001 # Warpinator
+        53317 # Localsend
       ];
       trustedInterfaces = [ "docker0" ];
       enable = true;
