@@ -46,6 +46,7 @@
     ../common/optionals/programs/fish.nix
     ../common/optionals/programs/games.nix
     ../common/optionals/programs/gnupg.nix
+    ../common/optionals/programs/localsend.nix
     ../common/optionals/programs/nano.nix
     ../common/optionals/programs/nix-ld.nix
     ../common/optionals/programs/river.nix
@@ -81,14 +82,12 @@
         80 # HTTP
         443 # HTTPS
 
-        42000 # Warpinator
-        42001 # Warpinator
-        53317 # Localsend
+        # 42000 # Warpinator
+        # 42001 # Warpinator
       ];
       allowedUDPPorts = [
-        42000 # Warpinator
-        42001 # Warpinator
-        53317 # Localsend
+        # 42000 # Warpinator
+        # 42001 # Warpinator
       ];
       trustedInterfaces = [ "docker0" ];
       enable = true;
