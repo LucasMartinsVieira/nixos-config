@@ -5,6 +5,7 @@
   # ];
 
   home.packages = with pkgs; [
+    mangayomi
     ani-cli
     borgbackup
     brightnessctl
