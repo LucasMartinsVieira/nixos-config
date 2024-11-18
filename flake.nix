@@ -17,12 +17,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # SOPS
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     # Nixpkgs-f2k
     nixpkgs-f2k.url = "github:moni-dz/nixpkgs-f2k";
 
