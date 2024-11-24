@@ -39,6 +39,7 @@
       ## Browsers
       librewolf
       inputs.zen-browser.packages."${system}".specific
+      brave
     ];
     variables = {
       FZF_DEFAULT_COMMAND = "fd --hidden --strip-cwd-prefix --exclude .git";
