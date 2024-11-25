@@ -25,6 +25,7 @@
 
     # Optinals
     ../common/optionals/services/auto-cpufreq.nix
+    ../common/optionals/services/dbus.nix
     ../common/optionals/services/devmon.nix
     # ../common/optionals/services/kanata.nix
     ../common/optionals/services/openssh.nix
@@ -46,6 +47,7 @@
     ../common/optionals/programs/fish.nix
     ../common/optionals/programs/games.nix
     ../common/optionals/programs/gnupg.nix
+    ../common/optionals/programs/hyprland.nix
     ../common/optionals/programs/localsend.nix
     ../common/optionals/programs/nano.nix
     ../common/optionals/programs/nix-ld.nix
@@ -59,6 +61,8 @@
   ];
 
   boot = {
+    # Try to make suspension not suck on my machine
+    kernelParams = [ "amdgpu.securedisplay=0" ];
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "amdgpu" ];
     initrd = {
