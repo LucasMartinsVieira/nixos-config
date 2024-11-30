@@ -1,5 +1,4 @@
-_:
-{
+_: {
   security = {
     polkit.enable = true;
     sudo.enable = false;
@@ -8,6 +7,7 @@ _:
       enable = true;
       extraRules = [
         {
+          users = [ "lucas" ];
           groups = [ "wheel" ];
           keepEnv = true;
           persist = true;

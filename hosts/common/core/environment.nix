@@ -31,7 +31,8 @@
       zip
 
       ## Vulkan
-      stable.amdvlk
+      mesa
+      amdvlk
       vulkan-loader
       vulkan-tools
       vulkan-validation-layers

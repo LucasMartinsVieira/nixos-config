@@ -62,13 +62,18 @@
 
   boot = {
     # Try to make suspension not suck on my machine
-    kernelParams = [ "amdgpu.securedisplay=0" ];
+    kernelParams = [
+      # "video=eDP-1:1920x1080"
+      # "video=HDMI-A-1:1920x1080"
+      "amdgpu.dc=1"
+    ];
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "amdgpu" ];
     initrd = {
       # luks.devices."luks-8ff284ea-f99c-4e60-a7eb-608427b597f2".device = "/dev/disk/by-uuid/8ff284ea-f99c-4e60-a7eb-608427b597f2";
       # luks.devices."luks-eadfff45-7cad-48b0-a667-900574f082d5".device = "/dev/disk/by-uuid/eadfff45-7cad-48b0-a667-900574f082d5";
-      luks.devices."luks-c0d4c0e0-1ade-48b4-9352-6927d1fbbef4".device = "/dev/disk/by-uuid/c0d4c0e0-1ade-48b4-9352-6927d1fbbef4";
+      # luks.devices."luks-c0d4c0e0-1ade-48b4-9352-6927d1fbbef4".device = "/dev/disk/by-uuid/c0d4c0e0-1ade-48b4-9352-6927d1fbbef4";
+      luks.devices."luks-247812d3-d396-457d-a6f5-f96c34b10ca5".device = "/dev/disk/by-uuid/247812d3-d396-457d-a6f5-f96c34b10ca5";
       kernelModules = [ "amdgpu" ];
     };
     loader = {
