@@ -101,7 +101,7 @@
             }
             # inputs.nixos-cosmic.nixosModules.default
             # > Our main nixos configuration file <
-            ./hosts/nixos/configuration.nix
+            ./nixos/configuration.nix
             ./home_manager
           ];
         };

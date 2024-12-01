@@ -20,41 +20,21 @@
 
     # You can also split up your configuration and import pieces of it here:
 
-    # Required Configs
-    ../common/core
+    # Folders
+    ./environment
+    ./hardware
+    ./programs
+    ./services
+    ./virtualisation
 
-    # Optinals
-    ../common/optionals/services/auto-cpufreq.nix
-    ../common/optionals/services/dbus.nix
-    ../common/optionals/services/devmon.nix
-    # ../common/optionals/services/kanata.nix
-    ../common/optionals/services/openssh.nix
-    ../common/optionals/services/picom.nix
-    ../common/optionals/services/pipewire.nix
-    ../common/optionals/services/syncthing.nix
-    ../common/optionals/services/udisks2.nix
-    ../common/optionals/services/xserver.nix
-
-    ../common/optionals/hardware/graphics.nix
-    ../common/optionals/hardware/bluetooth.nix
-    ../common/optionals/hardware/graphics.nix
-
-    ../common/optionals/virtualisation/docker.nix
-    ../common/optionals/virtualisation/libvirtd.nix
-
-    ../common/optionals/programs/dconf.nix
-    ../common/optionals/programs/direnv.nix
-    ../common/optionals/programs/fish.nix
-    ../common/optionals/programs/games.nix
-    ../common/optionals/programs/gnupg.nix
-    ../common/optionals/programs/hyprland.nix
-    ../common/optionals/programs/localsend.nix
-    ../common/optionals/programs/nano.nix
-    ../common/optionals/programs/nix-ld.nix
-    ../common/optionals/programs/river.nix
-    ../common/optionals/programs/tmux.nix
-    ../common/optionals/programs/xwayland.nix
-    ../common/optionals/programs/zsh.nix
+    # Files
+    ./console.nix
+    ./fonts.nix
+    ./i18n.nix
+    ./security.nix
+    ./time.nix
+    ./users.nix
+    ./xdg.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
