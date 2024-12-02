@@ -30,7 +30,6 @@
 
     ## Vulkan
     mesa
-    amdvlk
     vulkan-loader
     vulkan-tools
     vulkan-validation-layers

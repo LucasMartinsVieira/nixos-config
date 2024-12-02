@@ -1,94 +1,176 @@
-# Code took from https://github.com/NixOS/nixpkgs/pull/286512 
 {
   lib,
   fetchFromGitHub,
   flutter,
-  cargo,
+  pkg-config,
+  webkitgtk_4_1,
+  mpv,
+  libass,
+  ffmpeg,
+  libplacebo,
+  libunwind,
+  shaderc,
+  vulkan-loader,
+  lcms,
+  libdovi,
+  libdvdnav,
+  libdvdread,
+  mujs,
+  libbluray,
+  lua,
+  rubberband,
+  libuchardet,
+  zimg,
+  alsa-lib,
+  openal,
+  pipewire,
+  libpulseaudio,
+  libcaca,
+  libdrm,
+  mesa,
+  libXScrnSaver,
+  nv-codec-headers-11,
+  libXpresent,
+  libva,
+  libvdpau,
   rustPlatform,
-  mpv-unwrapped,
+  stdenv,
   xdg-user-dirs,
   zenity,
+  copyDesktopItems,
+  makeDesktopItem,
 }:
-
 let
-  buildToolPubspecLock = lib.importJSON ./build-tool-pubspec.lock.json;
-  mainPubspecLock = lib.importJSON ./pubspec.lock.json;
-in
-
-flutter.buildFlutterApplication rec {
   pname = "mangayomi";
-  version = "0.3.55";
-
+  version = "0.3.75";
   src = fetchFromGitHub {
     owner = "kodjodevf";
     repo = "mangayomi";
     rev = "refs/tags/v${version}";
-    hash = "sha256-16LLWJWkKzMNqVmxxgDF7SCOqtCeW2xBblJufda3UmI=";
+    hash = "sha256-kVAtUXEysaCJSLobXlgAgK59pgLq8Ze/XDqQNNdKdzg=";
   };
+  rustDep = rustPlatform.buildRustPackage {
+    inherit pname version src;
 
-  patches = [
-    ./cargokit.patch
-  ];
+    sourceRoot = "${src.name}/rust";
 
-  pubspecLock = lib.recursiveUpdate buildToolPubspecLock mainPubspecLock;
+    cargoHash = "sha256-b4PRFe8FgP/PXHwSw2qmderPRFCBC1ISQuf8uZcsxpY=";
+
+    passthru.libraryPath = "lib/librust_lib_mangayomi.so";
+  };
+in
+flutter.buildFlutterApplication {
+  inherit pname version src;
+
+  pubspecLock = lib.importJSON ./pubspec.lock.json;
+
+  customSourceBuilders = {
+    rust_lib_mangayomi =
+      { version, src, ... }:
+      stdenv.mkDerivation rec {
+        pname = "rust_lib_mangayomi";
+        inherit version src;
+        inherit (src) passthru;
+        patches = [ ./cargokit.patch ];
+        postPatch = ''
+          substituteInPlace ./rust_builder/cargokit/cmake/cargokit.cmake \
+            --replace-fail "OUTPUT_LIB" "${rustDep}/${rustDep.passthru.libraryPath}"
+        '';
+        installPhase = ''
+          runHook preInstall
+
+          cp -r . $out
+
+          runHook postInstall
+        '';
+      };
+  };
 
   gitHashes = {
-    "flutter_qjs" = "sha256-l6uUUqiIkdD3ayUY9rUzxKXunlW2QU2sAuDd8fc2Iyc=";
-    "flutter_windows_webview" = "sha256-lo8RwaInPa/dwD7Kay4edupOhNHdMTrMXy0f3XzRUgU=";
-    "media_kit_libs_windows_video" = "sha256-SYVVOR6vViAsDH5MclInJk8bTt/Um4ccYgYDFrb5LBk=";
-    "media_kit_native_event_loop" = "sha256-SYVVOR6vViAsDH5MclInJk8bTt/Um4ccYgYDFrb5LBk=";
-    "media_kit_video" = "sha256-SYVVOR6vViAsDH5MclInJk8bTt/Um4ccYgYDFrb5LBk=";
-  };
-
-  cargoRoot = "rust";
-
-  cargoDeps = rustPlatform.fetchCargoTarball {
-    inherit pname version src;
-    sourceRoot = "${src.name}/${cargoRoot}";
-    hash = "sha256-efIfv/yZV6AFqJcdGQrFr24+gKUxX1xn+bRgPLwToP8=";
+    desktop_webview_window = "sha256-Z9ehzDKe1W3wGa2AcZoP73hlSwydggO6DaXd9mop+cM=";
+    flutter_qjs = "sha256-m+Z0bCswylfd1E2Y6X6bdPivkSlXUxO4J0Icbco+/0A=";
+    media_kit_libs_windows_video = "sha256-SYVVOR6vViAsDH5MclInJk8bTt/Um4ccYgYDFrb5LBk=";
+    media_kit_native_event_loop = "sha256-SYVVOR6vViAsDH5MclInJk8bTt/Um4ccYgYDFrb5LBk=";
+    media_kit_video = "sha256-SYVVOR6vViAsDH5MclInJk8bTt/Um4ccYgYDFrb5LBk=";
   };
 
   nativeBuildInputs = [
-    rustPlatform.cargoSetupHook
-    cargo
+    pkg-config
+    copyDesktopItems
   ];
 
   buildInputs = [
-    mpv-unwrapped
+    webkitgtk_4_1
+    mpv
+    libass
+    ffmpeg
+    libplacebo
+    libunwind
+    shaderc
+    vulkan-loader
+    lcms
+    libdovi
+    libdvdnav
+    libdvdread
+    mujs
+    libbluray
+    lua
+    rubberband
+    libuchardet
+    zimg
+    alsa-lib
+    openal
+    pipewire
+    libpulseaudio
+    libcaca
+    libdrm
+    mesa
+    libXScrnSaver
+    libXpresent
+    nv-codec-headers-11
+    libva
+    libvdpau
   ];
 
-  env.NIX_CFLAGS_COMPILE = "-Wno-error=int-conversion";
-
-  # use writable location for rust_builder instead of the store path made by pub2nix
-  # this is also needed since patches don't get inherited by pub2nix
-  preBuild = ''
-    substituteInPlace .dart_tool/package_config.json \
-        --replace-fail "file://${src}//rust_builder" "$(pwd)/rust_builder"
-  '';
+  desktopItems = [
+    (makeDesktopItem {
+      name = "mangayomi";
+      exec = "mangayomi";
+      icon = "mangayomi";
+      genericName = "Mangayomi";
+      desktopName = "Mangayomi";
+      categories = [
+        "Utility"
+      ];
+      keywords = [
+        "Manga"
+        "Anime"
+        "BitTorrent"
+      ];
+    })
+  ];
 
   postInstall = ''
-    substituteInPlace linux/appimage/AppRun.desktop \
-        --replace-fail "AppRun" "mangayomi"
-    install -Dm644 linux/appimage/AppRun.desktop $out/share/applications/mangayomi.desktop
-    install -Dm644 linux/appimage/AppRun.png $out/share/pixmaps/mangayomi.png
+    install -Dm644 assets/app_icons/icon-red.png $out/share/pixmaps/mangayomi.png
   '';
 
   extraWrapProgramArgs = ''
-    --prefix LD_LIBRARY_PATH : $out/app/${pname}/lib \
-    --prefix PATH : ${
+    --prefix LD_LIBRARY_PATH : "$out/app/${pname}/lib" \
+    --prefix PATH : "${
       lib.makeBinPath [
         xdg-user-dirs
         zenity
       ]
-    }
+    }"
   '';
 
   meta = {
     changelog = "https://github.com/kodjodevf/mangayomi/releases/tag/v${version}";
-    description = "Free and open source application for reading manga and watching anime";
+    description = "Read manga and stream anime from a variety of sources including BitTorrent";
     homepage = "https://github.com/kodjodevf/mangayomi";
-    license = lib.licenses.asl20;
     mainProgram = "mangayomi";
-    maintainers = with lib.maintainers; [ tomasajt ];
+    license = with lib.licenses; [ asl20 ];
+    maintainers = with lib.maintainers; [ aucub ];
+    platforms = lib.platforms.linux;
   };
 }
