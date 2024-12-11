@@ -45,7 +45,8 @@
     kernelParams = [
       # "video=eDP-1:1920x1080"
       # "video=HDMI-A-1:1920x1080"
-      "amdgpu.dc=1"
+      # "amdgpu.dc=1"
+      # "amdgpu.securedisplay=0"
     ];
     kernelPackages = pkgs.linuxPackages_latest;
     kernelModules = [ "amdgpu" ];

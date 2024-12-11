@@ -38,6 +38,8 @@
     librewolf
     inputs.zen-browser.packages."${system}".specific
     brave
+    tor-browser
+    tor
 
     kitty
     neovim
