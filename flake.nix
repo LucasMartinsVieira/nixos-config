@@ -27,7 +27,7 @@
     };
 
     # Zen-browser
-    zen-browser.url = "github:ch4og/zen-browser-flake";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     # TODO: Add any other flake you might need
     # hardware.url = "github:nixos/nixos-hardware";
