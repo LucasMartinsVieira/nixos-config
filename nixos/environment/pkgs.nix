@@ -99,10 +99,12 @@
 
     # Proprietary
     discord
+    figma-linux
     obsidian
     spotify-adblock
     telegram-desktop
     tradingview
+    whatsapp-for-linux
 
     # Dev
 
