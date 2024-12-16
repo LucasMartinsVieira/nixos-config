@@ -79,7 +79,8 @@
     tokei
     yazi
     yt-dlp
-    zapnote
+    # zapnote
+    inputs.zapnote.packages.${system}.default
     zoxide
 
     # GUI

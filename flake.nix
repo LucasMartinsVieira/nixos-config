@@ -29,6 +29,9 @@
     # Zen-browser
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
+    # Zapnote
+    zapnote.url = "github:LucasMartinsVieira/zapnote";
+
     # TODO: Add any other flake you might need
     # hardware.url = "github:nixos/nixos-hardware";
 
