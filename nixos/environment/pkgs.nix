@@ -59,6 +59,7 @@
     dunst
     eza
     fd
+    feh
     ffmpeg
     ffmpegthumbnailer
     fzf
@@ -67,14 +68,17 @@
     lazydocker
     lazygit
     lf
+    maim
     mpv
     p7zip
     playerctl
     poppler
+    redshift
     ripgrep
     rofi-wayland
     sesh
     starship
+    sxiv
     tlrc
     tokei
     yazi

@@ -102,6 +102,7 @@
                 trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
               };
             }
+
             # inputs.nixos-cosmic.nixosModules.default
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
