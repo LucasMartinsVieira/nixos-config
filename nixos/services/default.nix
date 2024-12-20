@@ -7,6 +7,7 @@ _: {
     ./openssh.nix
     ./picom.nix
     ./pipewire.nix
+    ./postgres.nix
     ./syncthing.nix
     ./udisks2.nix
     ./xserver.nix
