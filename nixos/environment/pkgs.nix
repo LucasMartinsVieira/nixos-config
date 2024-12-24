@@ -36,7 +36,7 @@
 
     ## Browsers
     librewolf
-    inputs.zen-browser.packages."${system}".specific
+    inputs.zen-browser.packages."${system}"
     brave
     tor-browser
     tor
@@ -109,7 +109,6 @@
     spotify-adblock
     telegram-desktop
     tradingview
-    whatsapp-for-linux
 
     # Dev
 
