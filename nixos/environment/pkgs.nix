@@ -36,11 +36,12 @@
 
     ## Browsers
     librewolf
-    inputs.zen-browser.packages."${system}"
+    inputs.zen-browser.packages."${system}".default
     brave
     tor-browser
     tor
 
+    inputs.ghostty.packages.${system}.default
     kitty
     neovim
 
