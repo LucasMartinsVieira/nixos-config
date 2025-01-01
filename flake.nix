@@ -33,7 +33,7 @@
     zapnote.url = "github:LucasMartinsVieira/zapnote";
 
     # Ghostty
-    ghostty.url = "github:ghostty-org/ghostty";
+    # ghostty.url = "github:ghostty-org/ghostty";
 
     # TODO: Add any other flake you might need
     # hardware.url = "github:nixos/nixos-hardware";

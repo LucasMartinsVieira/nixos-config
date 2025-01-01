@@ -41,7 +41,7 @@
     tor-browser
     tor
 
-    inputs.ghostty.packages.${system}.default
+    # inputs.ghostty.packages.${system}.default
     kitty
     neovim
 
@@ -125,12 +125,12 @@
     gopls
 
     ## Java
-    gradle
-    maven
-    jdk
-    jdt-language-server
-    jetbrains.idea-community
-    kotlin
+    # gradle
+    # maven
+    # jdk
+    # jdt-language-server
+    # jetbrains.idea-community
+    # kotlin
 
     ## JavaScript
     eslint_d

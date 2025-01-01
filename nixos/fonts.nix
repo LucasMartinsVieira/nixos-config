@@ -8,7 +8,6 @@
       nerd-fonts.fira-mono
       nerd-fonts.geist-mono
       nerd-fonts.jetbrains-mono
-      nerd-fonts.zed-mono
       # nerd-fonts.meslo-lg
       noto-fonts
       noto-fonts-color-emoji
