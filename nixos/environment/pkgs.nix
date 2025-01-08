@@ -90,7 +90,6 @@
 
     # GUI
     beekeeper-studio
-    flowtime
     foliate
     gimp
     libreoffice
@@ -100,7 +99,6 @@
     thunderbird
     transmission_4-gtk
     virt-manager
-    warpinator
     zathura
 
     # Proprietary
@@ -160,6 +158,5 @@
     markdown-oxide
     yaml-language-server
     taplo
-
   ];
 }

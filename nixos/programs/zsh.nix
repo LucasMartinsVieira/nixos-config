@@ -1,7 +1,6 @@
-_:
-{
+_: {
   programs.zsh = {
-    enable = true;
+    enable = false;
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
