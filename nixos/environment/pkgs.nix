@@ -94,7 +94,7 @@
     gimp
     libreoffice
     localsend
-    mangayomi
+    mangayomi-custom
     pavucontrol
     thunderbird
     transmission_4-gtk
@@ -108,6 +108,7 @@
     spotify-adblock
     telegram-desktop
     tradingview
+    youtube-music
 
     # Dev
 
