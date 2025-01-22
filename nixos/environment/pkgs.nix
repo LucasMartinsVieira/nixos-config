@@ -41,8 +41,8 @@
     tor-browser
     tor
 
-    # inputs.ghostty.packages.${system}.default
     kitty
+    ghostty
     neovim
 
     # Bat
@@ -90,6 +90,7 @@
 
     # GUI
     beekeeper-studio
+    bruno
     foliate
     gimp
     libreoffice

@@ -99,14 +99,8 @@
         nixos = nixpkgs.lib.nixosSystem {
           inherit specialArgs;
           modules = [
-            {
-              nix.settings = {
-                substituters = [ "https://cosmic.cachix.org/" ];
-                trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
-              };
-            }
 
-            # inputs.nixos-cosmic.nixosModules.default
+            inputs.nixos-cosmic.nixosModules.default
             # > Our main nixos configuration file <
             ./nixos/configuration.nix
             ./home_manager
