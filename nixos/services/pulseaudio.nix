@@ -1,5 +1,5 @@
 _: {
-  hardware.pulseaudio = {
+  services.pulseaudio = {
     enable = false;
   };
 }

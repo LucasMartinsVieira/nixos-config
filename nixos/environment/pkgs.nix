@@ -93,6 +93,7 @@
     bruno
     foliate
     gimp
+    gnome-clocks
     libreoffice
     localsend
     mangayomi-custom

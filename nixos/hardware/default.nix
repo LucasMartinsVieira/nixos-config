@@ -3,6 +3,5 @@ _: {
     ./amdvlk.nix
     ./bluetooth.nix
     ./graphics.nix
-    ./pulseaudio.nix
   ];
 }
