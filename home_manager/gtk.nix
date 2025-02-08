@@ -11,10 +11,10 @@
       package = pkgs.orchis-theme;
       name = "Orchis-Dark";
     };
-    iconTheme = {
-      package = pkgs.kora-icon-theme;
-      name = "kora";
-    };
+    # iconTheme = {
+    #   package = pkgs.kora-icon-theme;
+    #   name = "kora";
+    # };
   };
 
   home.pointerCursor = {

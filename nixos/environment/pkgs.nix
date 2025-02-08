@@ -96,7 +96,7 @@
     gnome-clocks
     libreoffice
     localsend
-    mangayomi-custom
+    mangayomi
     pavucontrol
     thunderbird
     transmission_4-gtk
