@@ -85,7 +85,7 @@
     yazi
     yt-dlp
     # zapnote
-    inputs.zapnote.packages.${system}.default
+    # inputs.zapnote.packages.${system}.default
     zoxide
 
     # GUI
