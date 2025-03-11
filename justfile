@@ -5,15 +5,15 @@ default:
 
 rebuild:
   just rebuild-pre
-  doas nixos-rebuild switch --flake ".#{{HOSTNAME}}"
+  bash scripts/rebuild_flake.sh
 
 rebuild-pre:
   git add *.nix
 
 update:
-  nix flake update
+  bash scripts/update_flake.sh
 
-rebuild-update: 
+update-rebuild: 
   just update 
   just rebuild
 

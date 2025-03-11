@@ -126,11 +126,11 @@
     gopls
 
     ## Java
-    # gradle
-    # maven
-    # jdk
-    # jdt-language-server
-    # jetbrains.idea-community
+    gradle
+    # jdk23
+    jetbrains.idea-community
+    maven
+
     # kotlin
 
     ## JavaScript
