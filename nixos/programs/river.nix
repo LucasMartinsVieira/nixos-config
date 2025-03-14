@@ -11,6 +11,7 @@
       kanshi
       ristate
       slurp
+      swaybg
       swww
       wl-clipboard
       wlr-randr
