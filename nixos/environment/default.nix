@@ -1,6 +1,6 @@
 _: {
   imports = [
-    ./pkgs.nix
+    ./pkgs
     ./variables.nix
   ];
 }
