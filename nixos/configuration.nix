@@ -102,7 +102,9 @@
     config = {
       # Disable if you don't want unfree packages
       allowUnfree = true;
-      permittedInsecurePackages = lib.optional (pkgs.obsidian.version == "1.5.3") "electron-25.9.0";
+      permittedInsecurePackages = lib.optional (pkgs.obsidian.version == "1.5.3") "electron-25.9.0" ++ [
+        "beekeeper-studio-5.1.5"
+      ];
     };
   };
 

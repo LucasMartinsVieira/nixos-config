@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     # Browsers
+    firefox
     librewolf
     inputs.zen-browser.packages."${system}".default
     brave

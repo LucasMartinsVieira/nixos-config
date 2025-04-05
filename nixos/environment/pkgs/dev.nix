@@ -22,11 +22,12 @@
 
     ## JavaScript
     eslint_d
-    nodejs_20
+    nodejs_22
     nodePackages_latest.typescript-language-server
     prettierd
-    vscode-langservers-extracted # HTML, CSS, JSON, ESLint
     tailwindcss-language-server
+    vscode-langservers-extracted # HTML, CSS, JSON, ESLint
+    yarn
 
     ## Lua
     lua
